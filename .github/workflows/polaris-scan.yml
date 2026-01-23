@@ -1,0 +1,40 @@
+name: Polaris Security Scan
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+  workflow_dispatch:  # 手動觸發
+
+jobs:
+  polaris-scan:
+    runs-on: ubuntu-latest
+
+    env:
+      POLARIS_URL: ${{ vars.POLARIS_URL }}
+      APP_NAME: ${{ github.repository_owner }}
+      PROJECT_NAME: ${{ github.event.repository.name }}
+      BRANCH_NAME: ${{ github.ref_name }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download Bridge CLI
+        run: |
+          curl -fLsS -o bridge.zip "https://repo.blackduck.com/bds-integrations-release/com/blackduck/integration/bridge/binaries/bridge-cli-bundle/latest/bridge-cli-bundle-linux64.zip"
+          unzip -qo bridge.zip
+          chmod +x bridge-cli-bundle-linux64/bridge-cli
+
+      - name: Run Polaris SAST + SCA Scan
+        env:
+          BRIDGE_POLARIS_ACCESSTOKEN: ${{ secrets.POLARIS_ACCESS_TOKEN }}
+        run: |
+          ./bridge-cli-bundle-linux64/bridge-cli --stage polaris \
+            polaris.serverurl="$POLARIS_URL" \
+            polaris.application.name="$APP_NAME" \
+            polaris.project.name="$PROJECT_NAME" \
+            polaris.branch.name="$BRANCH_NAME" \
+            polaris.assessment.types="SAST,SCA" \
+            polaris.onboarding=true
