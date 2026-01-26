@@ -1,8 +1,4 @@
-# Coverity 配置檔 - 測試 SCM 掃描是否讀取
-version: 8
-
+# Coverity 配置檔 - 測試 SCM 掃描設定
 capture:
-  # 排除目錄
-  exclude:
-    - pattern: '.*/test/.*'
-    - pattern: '.*/node_modules/.*'
+  files:
+    exclude-regex: "test|node_modules"
