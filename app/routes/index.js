@@ -83,3 +83,16 @@ const index = (app, db) => {
 };
 
 module.exports = index;
+
+// === Intentional vulnerabilities for PR comment testing ===
+// SQL Injection
+app.get('/api/test-sqli', (req, res) => {
+    const query = "SELECT * FROM users WHERE id = " + req.query.id;
+    db.query(query, (err, result) => res.json(result));
+});
+
+// Command Injection
+app.get('/api/test-cmdi', (req, res) => {
+    const cmd = "ls " + req.query.path;
+    require('child_process').exec(cmd, (err, stdout) => res.send(stdout));
+});
