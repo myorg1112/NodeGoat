@@ -61,7 +61,6 @@ jobs:
             polaris.assessment.types="SAST,SCA" \
             polaris.onboarding=true \
             polaris.prcomment.enabled=true \
-            'polaris.prcomment.severities=["CRITICAL","HIGH","MEDIUM"]' \
             github.repository.name="$REPO_NAME" \
             github.repository.owner.name="$REPO_OWNER" \
             github.repository.pull.number="$PR_NUMBER" \
