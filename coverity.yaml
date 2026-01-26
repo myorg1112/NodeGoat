@@ -1,0 +1,12 @@
+# Coverity 配置檔 - 測試 SCM 掃描是否讀取
+capture:
+  build:
+    # 排除測試目錄
+    exclude:
+      - "test/"
+      - "node_modules/"
+
+analyze:
+  # 停用 HARDCODED_CREDENTIALS checker（測試用）
+  disable-checkers:
+    - HARDCODED_CREDENTIALS
