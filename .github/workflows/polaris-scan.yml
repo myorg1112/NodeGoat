@@ -10,6 +10,9 @@ on:
 jobs:
   polaris-scan:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
 
     env:
       POLARIS_URL: ${{ vars.POLARIS_URL }}
@@ -61,7 +64,7 @@ jobs:
             polaris.assessment.types="SAST,SCA" \
             polaris.onboarding=true \
             polaris.prcomment.enabled=true \
-            polaris.prcomment.severities='["CRITICAL","HIGH","MEDIUM"]' \
+            polaris.prcomment.severities=CRITICAL,HIGH,MEDIUM,LOW \
             github.repository.name="$REPO_NAME" \
             github.repository.owner.name="$REPO_OWNER" \
             github.repository.pull.number="$PR_NUMBER" \

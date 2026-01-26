@@ -1,0 +1,4 @@
+# Coverity 配置檔 - 測試 SCM 掃描設定
+capture:
+  files:
+    exclude-regex: "test|node_modules"
