@@ -9,7 +9,7 @@ on:
 
 jobs:
   polaris-scan:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     env:
       POLARIS_URL: ${{ vars.POLARIS_URL }}
