@@ -1,0 +1,27 @@
+name: Polaris Scan (Plugin)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  polaris-scan:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Black Duck Security Scan
+        uses: blackduck-inc/black-duck-security-scan@v2
+        with:
+          polaris_server_url: ${{ vars.POLARIS_URL }}
+          polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}
+          polaris_application_name: ${{ github.repository_owner }}
+          polaris_project_name: ${{ github.event.repository.name }}
+          polaris_branch_name: ${{ github.head_ref || github.ref_name }}
+          polaris_branch_parent_name: ${{ github.base_ref || 'master' }}
+          polaris_assessment_types: 'SAST,SCA'
+          polaris_prComment_enabled: ${{ github.event_name == 'pull_request' }}
+          polaris_prComment_severities: '["CRITICAL","HIGH","MEDIUM"]'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
