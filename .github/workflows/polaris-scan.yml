@@ -7,6 +7,10 @@ on:
     branches: [master, main]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   polaris-scan:
     runs-on: self-hosted
