@@ -1,0 +1,39 @@
+# Test: Plugin optional parameters — SARIF, Fix PR, SAST-RAPID
+# workflow_dispatch only — manual trigger to verify commented-out params work
+name: Test Optional (Plugin)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write              # Fix PR needs to create branches
+  pull-requests: write         # PR comments + Fix PR
+  security-events: write       # SARIF upload to Code Scanning
+
+jobs:
+  test-optional-params:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Black Duck Security Scan
+        uses: blackduck-inc/black-duck-security-scan@v2
+        with:
+          polaris_server_url: ${{ vars.POLARIS_URL }}
+          polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}
+          polaris_application_name: ${{ github.repository_owner }}
+          polaris_project_name: ${{ github.event.repository.name }}
+          polaris_branch_name: ${{ github.ref_name }}
+          polaris_assessment_types: 'SAST,SCA'
+
+          # ── Parameters under test ──
+          polaris_test_sast_type: 'SAST-RAPID'
+          polaris_reports_sarif_create: true
+          polaris_upload_sarif_report: true
+          blackducksca_fixpr_enabled: true
+          blackducksca_fixpr_filter_severities: '["CRITICAL","HIGH"]'
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
