@@ -31,7 +31,7 @@ on:
 permissions:
   contents: read                  # read repo code (required for checkout)
   pull-requests: write            # post PR review comments (required for PR comment feature)
-  security-events: write          # required for SARIF upload to GitHub Code Scanning
+  # security-events: write       # only needed if using SARIF upload to GitHub Code Scanning
 
 jobs:
   polaris-scan:
@@ -52,11 +52,9 @@ jobs:
       # Step 3a: Full scan on push (not a PR)
       # This step only runs on push events, not pull requests
       - name: Polaris Scan (Push)
-        id: polaris-push
         if: github.event_name != 'pull_request'
-        continue-on-error: true
         env:
-          BRIDGE_POLARIS_ACCESSTOKEN: ${{ secrets.POLARIS_ACCESS_TOKEN }}
+          BRIDGE_POLARIS_ACCESSTOKEN: ${{ secrets.POLARIS_ACCESS_TOKEN }}   # Polaris API token from repo secrets
         run: |
           ./bridge-cli-bundle-linux64/bridge-cli --stage polaris \
             polaris.serverurl="${{ vars.POLARIS_URL }}" \
@@ -64,22 +62,12 @@ jobs:
             polaris.project.name="${{ github.event.repository.name }}" \
             polaris.branch.name="${{ github.ref_name }}" \
             polaris.assessment.types="SAST,SCA" \
-            polaris.onboarding=true \
-            polaris.reports.sarif.create=true
-
-      # Step 3a-2: Upload SARIF to GitHub Code Scanning
-      - name: Upload SARIF
-        if: github.event_name != 'pull_request' && always()
-        uses: github/codeql-action/upload-sarif@v3
-        with:
-          sarif_file: .bridge/polaris_sarif_generator/report.sarif.json
-
-      # Step 3a-3: Check policy result
-      - name: Check Policy Result
-        if: github.event_name != 'pull_request' && steps.polaris-push.outcome == 'failure'
-        run: |
-          echo "::warning::Polaris scan completed with policy violation (exit code 8) or error"
-          echo "Check Polaris for details: ${{ vars.POLARIS_URL }}"
+            polaris.onboarding=true
+          #
+          # ── Optional parameters (uncomment to use) ──
+          # polaris.test.sast.type=SAST-FULL \       # SAST-FULL (default, thorough) or SAST-RAPID (fast, pattern-based)
+          # polaris.test.sca.type=SCA-PACKAGE \       # SCA-PACKAGE (default), SCA-SIGNATURE, or SCA-PACKAGE,SCA-SIGNATURE
+          # polaris.reports.sarif.create=true \        # generate SARIF report (add Upload SARIF step below)
 
       # Step 3b: PR scan with automatic review comments
       # Compares the PR branch against the target branch and posts new findings as PR comments
@@ -103,11 +91,6 @@ jobs:
             github.repository.pull.number="${{ github.event.pull_request.number }}" \
             github.user.token="$GITHUB_TOKEN"
           #
-          # ── PR-specific parameters ──
-          # polaris.branch.parent.name → PR target branch (e.g. "main") — used to find NEW issues only
-          # polaris.prcomment.enabled  → post findings as PR review comments
-          # github.*                   → GitHub API info for posting comments
-          #
           # ── Optional ──
-          # polaris.prcomment.severities='["CRITICAL","HIGH","MEDIUM"]' \  # filter: only comment on these severities (default: high + critical)
-          # polaris.test.sast.type=SAST-RAPID \                            # recommended for PRs: faster feedback
+          # polaris.prcomment.severities=CRITICAL,HIGH,MEDIUM \   # filter: only comment on these severities (default: high + critical)
+          # polaris.test.sast.type=SAST-RAPID \                   # recommended for PRs: faster feedback
