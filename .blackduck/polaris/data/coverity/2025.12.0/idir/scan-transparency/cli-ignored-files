@@ -1,0 +1,7 @@
+/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.gitignore
+/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/LICENSE
+/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/Procfile
+/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/assets/favicon.ico
+/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/assets/images/nodegoat_logo.png
+/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/assets/images/owasplogo.png
+/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/views/layout.html

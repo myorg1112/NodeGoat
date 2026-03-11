@@ -86,6 +86,7 @@ jobs:
             polaris.assessment.types="SAST,SCA" \
             polaris.onboarding=true \
             polaris.prcomment.enabled=true \
+            polaris.prcomment.severities=CRITICAL \
             github.repository.name="${{ github.event.repository.name }}" \
             github.repository.owner.name="${{ github.repository_owner }}" \
             github.repository.pull.number="${{ github.event.pull_request.number }}" \

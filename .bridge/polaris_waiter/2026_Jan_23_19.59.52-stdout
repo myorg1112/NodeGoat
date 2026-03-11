@@ -1,0 +1,4 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-waiter/versions/0.2.92/polaris-waiter /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_waiter/data.json
+{"level":"info","logger":"Polaris Waiter","msg":"Waiting for test with assessment type \"SAST(sastRapid)\" and id \"30526f10-9351-4058-bcf5-8b7b05710980\"","time":"2026-01-23 19:59:52.7772 CST"}
+{"level":"info","logger":"Polaris Waiter","msg":"Polling Test Manager: state of test with assessment type \"SAST(sastRapid)\" and id \"30526f10-9351-4058-bcf5-8b7b05710980\" is \"Waiting for Capture\"","time":"2026-01-23 19:59:53.0185 CST"}
+{"level":"info","logger":"Polaris Waiter","msg":"test with assessment type \"SAST(sastRapid)\" and id \"30526f10-9351-4058-bcf5-8b7b05710980\" completed successfully","time":"2026-01-23 20:00:03.2641 CST"}

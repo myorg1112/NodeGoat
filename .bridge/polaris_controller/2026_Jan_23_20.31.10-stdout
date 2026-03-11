@@ -1,0 +1,7 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-controller/versions/0.2.239/polaris-controller /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_controller/data.json
+{"level":"info","logger":"Polaris Controller","msg":"Running for \"sca\" assessment with scan type \"scaPackage\"","time":"2026-01-23 20:31:10.9684 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"checking \"detect\" tool installation inside bridge home directory: /home/allenl/.blackduck/bridge/tools/blackduck-detect/10.4.0","time":"2026-01-23 20:31:10.9684 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Running command:/usr/lib/jvm/java-17-openjdk-amd64/bin/java -version","time":"2026-01-23 20:31:10.9684 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Checking tool version for \"detect\" in \"/home/allenl/.blackduck/bridge/tools/blackduck-detect/10.4.0\"","time":"2026-01-23 20:31:10.9910 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Got tool version for \"detect\": 10.4.0","time":"2026-01-23 20:31:10.9926 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"\"detect\" tool is already installed...","time":"2026-01-23 20:31:11.2239 CST"}

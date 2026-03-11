@@ -1,0 +1,8 @@
+Running Sigma.
+/home/allenl/.blackduck/bridge/tools/sigma/2025.12.0/sigma --config /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir/sigma/sigma-config.json --internal-polaris-scan-log /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir/sigma/sigma-log.json --internal-coverity-config /tmp/cov-run-sigma-config-2722319140/coverity.yaml analyze /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat
+
+Importing sources...
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.github/workflows/polaris-scan.yml
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.github/workflows/lint.yml
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.github/workflows/e2e-test.yml
+Completed source import.

@@ -1,0 +1,40 @@
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>SIGMA.missing_secure_attribute_session_cookie</checker>
+<type>sigma.missing_secure_attribute_session_cookie</type>
+<subtype>express</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/server.js</file>
+<isRapidScan>true</isRapidScan>
+<function>!server.js!%IPFE</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>The configuration of the `client-sessions`, `cookie-session` or `express-session` library does not set the `secure` attribute of the session cookie. While web browsers send cookies with the `secure` attribute only over HTTPS, they do send cookies without it over HTTP. If an attacker can fool the victim's browser into sending an HTTP request to the vulnerable site (for example, with JavaScript code on a malicious page or with a phishing link), the victim's browser will send the vulnerable cookie in clear text. If the attacker can also intercept this network traffic, then they can steal the victim's session cookie and impersonate the victim.</description>
+<line>78</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Set the `secure` property to `true` explicitly to prevent the cookies from being sent over an insecure channel.</description>
+<line>78</line>
+</event>
+<extra>missing_secure_attribute_session_cookie_express -- //server.js</extra>
+<subcategory>express</subcategory>
+<antecedentMerge>
+<function>!&lt;placeholder&gt;!%ANONYMOUS(Unknown, Unknown)Unknown</function>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.missing_secure_attribute_session_cookie_express</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Secure attribute not set for session cookie</type>
+<cwe>614</cwe>
+<localEffect></localEffect>
+<longDescription>The configuration of the `client-sessions`, `cookie-session` or `express-session` library does not set the `secure` attribute of the session cookie. While web browsers send cookies with the `secure` attribute only over HTTPS, they do send cookies without it over HTTP. If an attacker can fool the victim's browser into sending an HTTP request to the vulnerable site (for example, with JavaScript code on a malicious page or with a phishing link), the victim's browser will send the vulnerable cookie in clear text. If the attacker can also intercept this network traffic, then they can steal the victim's session cookie and impersonate the victim.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

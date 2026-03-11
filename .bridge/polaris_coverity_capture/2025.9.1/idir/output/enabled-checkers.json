@@ -1,0 +1,4486 @@
+{
+  "ALLOC_FREE_MISMATCH" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "ANDROID_CAPABILITY_LEAK" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "ANGULAR_EXPRESSION_INJECTION" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "ANGULAR_SCE_DISABLED" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "ANONYMOUS_DB_CONNECTION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "ARRAY_VS_SINGLETON" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "ASPNET_MVC_VERSION_HEADER" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "ASSERT_SIDE_EFFECT" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "ATTRIBUTE_NAME_CONFLICT" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "AUTO_CAUSES_COPY" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "BAD_ALLOC_ARITHMETIC" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "BAD_ALLOC_STRLEN" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "BAD_CERT_VERIFICATION" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "BAD_CHECK_OF_WAIT_COND" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "BAD_COMPARE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "BAD_EQ" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "BAD_EQ_TYPES" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "BAD_FREE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "BAD_LOCK_OBJECT" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "BAD_OVERRIDE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "BAD_SHIFT" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "BAD_SIZEOF" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CALL_SUPER" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CHAR_IO" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CHECKED_RETURN" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "COM.BAD_FREE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "COM.BSTR.CONV" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CONFIG.ANDROID_GRADLE_OBFUSCATION_NOT_ENABLED" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CONFIG.ASP_VIEWSTATE_MAC" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "CONFIG.BEEGO_CSRF_PROTECTION_DISABLED" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CONFIG.DEAD_AUTHORIZATION_RULE" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "CONFIG.DYNAMIC_DATA_HTML_COMMENT" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CONFIG.ENABLED_DEBUG_MODE" : {
+    "disabled" : [
+      "JavaScript"
+    ],
+    "enabled" : [
+      "Text"
+    ]
+  },
+  "CONFIG.ENABLED_TRACE_MODE" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "CONFIG.HANA_XS_PREVENT_XSRF_DISABLED" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CONFIG.UNSAFE_SESSION_TIMEOUT" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "CONSTANT_EXPRESSION_RESULT" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "COOKIE_INJECTION" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "COOKIE_SERIALIZER_CONFIG" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "COPY_INSTEAD_OF_MOVE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "COPY_PASTE_ERROR" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "CORS_MISCONFIGURATION_AUDIT" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CSRF" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "CSS_INJECTION" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "CTOR_DTOR_LEAK" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CUDA.COLLECTIVE_WARP_SHUFFLE_WIDTH" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CUDA.CUDEVICE_HANDLES" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CUDA.DEVICE_DEPENDENT" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CUDA.DEVICE_DEPENDENT_CALLBACKS" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CUDA.DIVERGENCE_AT_COLLECTIVE_OPERATION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CUDA.ERROR_INTERFACE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CUDA.ERROR_KERNEL_LAUNCH" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CUDA.FORK" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CUDA.INACTIVE_THREAD_AT_COLLECTIVE_WARP" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CUDA.INITIATION_OBJECT_DEVICE_THREAD_BLOCK" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CUDA.INVALID_MEMORY_ACCESS" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CUDA.SHARE_FUNCTION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CUDA.SHARE_OBJECT_STREAM_ASSOCIATED" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CUDA.SPECIFIERS_INCONSISTENCY" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CUDA.SYNCHRONIZE_CALLBACKS" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "CUDA.SYNCHRONIZE_TERMINATION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "DC.DANGEROUS" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "DC.DEADLOCK" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "DEADCODE" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "DELETE_ARRAY" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "DELETE_VOID" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "DENY_LIST_FOR_AUTHN" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "DIVIDE_BY_ZERO" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "DOM_XSS" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "DYNAMIC_OBJECT_ATTRIBUTES" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "EL_INJECTION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "END_OF_LIFE_RAILS" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "END_OF_LIFE_RUBY" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "EVALUATION_ORDER" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "EXPOSED_DIRECTORY_LISTING" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "FORWARD_NULL" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "GLOBAL_INIT_ORDER" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "GUARDED_BY_VIOLATION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "HARDCODED_CREDENTIALS" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "HEADER_INJECTION" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "HIBERNATE_BAD_HASHCODE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "IDENTICAL_BRANCHES" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "IDENTIFIER_TYPO" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "IMPLICIT_INTENT" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "INCOMPATIBLE_CAST" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "INCOMPLETE_DEALLOCATOR" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "INEFFICIENT_RESERVE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "INFINITE_LOOP" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "INSECURE_COMMUNICATION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "INSECURE_CSP" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "INSECURE_FILE_PERMISSIONS" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "INSECURE_RANDOM" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "INSECURE_SALT" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "INSUFFICIENT_LOGGING" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "INVALIDATE_ITERATOR" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "JAVA_CODE_INJECTION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "JCR_INJECTION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "JSONWEBTOKEN_UNTRUSTED_DECODE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "JSP_DYNAMIC_INCLUDE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "JSP_SQL_INJECTION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "LDAP_INJECTION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "LOCALSTORAGE_MANIPULATION" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "LOCK_EVASION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "LOCK_INVERSION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "MASS_ASSIGNMENT" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "MISMATCHED_ITERATOR" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "MISSING_AUTHZ" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "MISSING_BREAK" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "MISSING_COMMA" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "MISSING_IFRAME_SANDBOX" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "MISSING_MOVE_ASSIGNMENT" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "MISSING_PERMISSION_FOR_BROADCAST" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "MISSING_RESTORE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "MISSING_RETURN" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "MISSING_THROW" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "MOBILE_ID_MISUSE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "MULTIPLE_INIT_SMART_PTRS" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "NEGATIVE_RETURNS" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "NESTING_INDENT_MISMATCH" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "NON_STATIC_GUARDING_STATIC" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "NOSQL_QUERY_INJECTION" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "NO_EFFECT" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "NULL_FIELD" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "NULL_RETURNS" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "OGNL_INJECTION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "OPEN_REDIRECT" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "ORM_LOAD_NULL_CHECK" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "ORM_UNNECESSARY_GET" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "OS_CMD_INJECTION" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "OVERFLOW_BEFORE_WIDEN" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "OVERLAPPING_COPY" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "OVERRUN" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "PASS_BY_VALUE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "PATH_MANIPULATION" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "PRECEDENCE_ERROR" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "PREDICTABLE_RANDOM_SEED" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "PRINTF_ARGS" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "PROPERTY_MIXUP" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "RAILS_DEFAULT_ROUTES" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "RAILS_DEVISE_CONFIG" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "RAILS_MISSING_FILTER_ACTION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "READLINK" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "REGEX_CONFUSION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "REGEX_INJECTION" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "REGEX_MISSING_ANCHOR" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "RESOURCE_LEAK" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "RETURN_LOCAL" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "REVERSE_INULL" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "REVERSE_NEGATIVE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "REVERSE_TABNABBING" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "RISKY_CRYPTO" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "RUBY_VULNERABLE_LIBRARY" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SCRIPT_CODE_INJECTION" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SEALED_JAR_ESCAPE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SENSITIVE_DATA_LEAK" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SERVLET_ATOMICITY" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SESSIONSTORAGE_MANIPULATION" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SESSION_FIXATION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SESSION_MANIPULATION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.access_control_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.access_to_secret" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.admin_access_enabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.admin_dashboard_publicly_accessible" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.alias_ip_disabled" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.allow_all_authz_policy" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.allow_non_strict_processing" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.allow_self_signed_certificate" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.always_remember_me_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.anonymous_access_enabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.anti_spoofing_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.api_exposes_refresh_token" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.api_key_auth_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.api_key_in_query_string" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.apparmour_default_configuration_override" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.audio_recording_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.automatic_key_rotation_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.automatic_os_upgrade_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.automatic_repair_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.automatic_upgrade_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.automounting_service_account_token" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.azure_ad_authentication_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.azure_ad_managed_identities_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.backups_allowed" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.basic_auth_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.biometric_authentication_protection_disabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.broad_domain_attribute_cookie" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.broad_filesystem_access" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.cache_ttl_too_long" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.cbc_insecure_padding" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.certificate_rotation_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.certificate_verification_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.circuit_breaker_disabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.client_store_info_leak" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.cloud_database_deletion_protection_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.cloud_gateway_publicly_accessible" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.cloud_object_lock_disabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.cloud_resource_assigned_public_ip" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.cloud_resource_publicly_accessible" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.cloud_service_authn_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.cloud_service_authz_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.cloud_storage_allows_public_config" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.cloud_storage_default_allow_all" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.cloud_storage_encryption_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.cloud_storage_publicly_accessible" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.confidential_computing_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.config_browser_plugin_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.conflicting_names" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.connection_timeout_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.container_access_to_host_filesystem" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.container_cpu_share_unlimited" : {
+    "disabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.container_daemon_socket_exposed" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.container_empty_security_context" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.container_excessive_restart_times" : {
+    "disabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.container_filesystem_write" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.container_hostport_binding" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.container_insecure_bind_address" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.container_mapped_to_privileged_port" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.container_missing_cpu_limit" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.container_missing_memory_limit" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.container_missing_pids_limit" : {
+    "disabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.container_privilege_escalation_allowed" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.container_requesting_net_raw" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.container_requesting_sys_admin" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.container_running_as_root" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.container_sharing_host_ipc_namespace" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.container_sharing_host_network_namespace" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.container_sharing_host_pid_namespace" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.container_sharing_mount_volumes" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.container_storing_secret_in_environment_variable" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.container_sudo_usage" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.content_isolation_disabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.content_security_policy_disabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.cookie_logging_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.cookie_session_signing_disabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.cors_configured_globally" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.cors_expose_sensitive_data" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.cors_no_credentials_permissive_origin" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.cors_origin_string" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.cors_permissive_methods" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.cors_preflight_age_too_long" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.cors_with_credentials_all_origin" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.cors_with_credentials_http_origin" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.cors_with_credentials_null_origin" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.cors_with_credentials_subdomain_origin" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.credentials_validation_disabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.credentials_without_keychain_protection" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.csp_frame_ancestors_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.csp_mixed_content" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.csp_permissive_source" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.csp_unsafe_eval" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.csp_unsafe_inline" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.csrf" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.csrf_protection_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.custom_cryptography" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.custom_keyboards_enabled" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.custom_resource_in_default_namespace" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.dangerous_oauth2_implicit_flow" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.dangerous_ropc_flow" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.dangerously_exposed_interface" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.data_exfiltration_protection_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.data_mask_obfuscation_disabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.data_sent_to_external_server" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.database_encryption_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.database_evolutions_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.database_integrity_protection_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.database_repair_mode_enabled" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.ddos_protection_disabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.debug_enabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.debug_logging_enabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.default_allow_all_authz_policy" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.default_service_account_enabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.deletion_protection_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.deprecated_component_used" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.deprecated_http_client" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.deprecated_runtime_version" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.deprecated_xss_header" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.dev_mode_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.digest_auth_enabled" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.disk_encryption_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.dns_prefetch_control_disabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.dnssec_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.drop_invalid_header_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.duplicate_validation_forms" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.dynamic_method_invocation" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.dynamically_loading_extensions_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.el_injection" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.element_any" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.empty_encryption_key" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.empty_password" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.empty_salt" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.empty_signing_key" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.encryption_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.excessive_auth_attempts" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.excessive_buffer_size" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.excessive_connection_timeout" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.excessive_http_buffer_size" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.excessive_ingress" : {
+    "disabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.excessive_key_rotation_period" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.excessive_memory_limit" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.excessive_request_retries" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.excessive_request_size" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.excessive_session_lifetime" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.excessive_token_lifetime" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.excessive_ttl" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.expect_ct_disabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.experimental_features_enabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.exposed_directory_listing" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.exposed_privileged_account" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.exposed_secret" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.expression_escaping_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.external_storage_used" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.file_data_unprotected_on_device" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.file_header_crc_disabled" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.file_upload_misconfiguration" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.file_upload_misconfiguration_of_fields" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.file_upload_misconfiguration_of_file_path" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.file_upload_misconfiguration_of_filesize" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.file_upload_misconfiguration_of_safe_file_names" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.file_upload_misconfiguration_of_storage" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.file_upload_misconfiguration_of_temp_files" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.full_table_scan" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.gateway_exposes_all_hosts" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.general_pasteboard_used" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.geo_redundant_backup_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.graphiql_enabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.hardcoded_remember_me_key" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.hardcoded_secret" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.hardcoded_value" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.hardware_backed_security_disabled" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.healthcheck_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.hide_powered_by_disabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.host_header_validation_disabled" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.hpkp_max_age_too_long" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.hpkp_report_uri_missing_tls" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.hsts_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.hsts_http_header_short_max_age" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.hsts_http_header_subdomains_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.http_firewall_allow_any_http_method" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.http_firewall_allows_special_char" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.http_firewall_insecure_default" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.http_header_validation_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.http_method_missing_authz" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.http_verb_tampering_method_inclusion" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.http_verb_tampering_method_omission" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.ie_no_open_disabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.image_scanning_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.immutable_tag_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.improper_use_of_add_command" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.improper_use_of_symmetric_cryptography" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.incomplete_credential_removal" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.infrastructure_encryption_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_active_user_switch" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_argon2_parameters" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_block_cipher_algorithm" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_block_cipher_mode" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_cipher" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_cookie_storage" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_credential_use" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_dataframe" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_direct_object_reference" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.insecure_file_permission" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.insecure_iframe_sandbox" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.insecure_ipc" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_network_bind" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_permission_on_exported_component" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.insecure_random" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_random_seed" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_referrer_policy" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_samesite_attribute_cookie" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_stream_cipher_algorithm" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_temporary_file" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_tls_cipher_suite" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_tls_renegotiation" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_tls_version" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insecure_xss_filter" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.insufficient_asymmetric_key_size" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.insufficient_brute_force_protection" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.insufficient_log_retention" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insufficient_logging" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insufficient_password_hash_iterations" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insufficient_password_hash_key_length" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insufficient_password_hash_salt_length" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insufficient_presigned_url_timeout" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.insufficient_soft_delete_retention" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insufficient_symmetric_key_size" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.insufficient_token_entropy" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.introspection_enabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.invalid_command_used" : {
+    "disabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.ip_forwarding_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.iptable_synchronization_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.javascript_code_in_description" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.jwt_algorithm_none" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.jwt_ignored_expiration_time" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.jwt_ignored_start_time" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.jwt_no_claims_validation" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.jwt_non_expiring_token" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.jwt_revoke_missing" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.jwt_untrusted_decode" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.kernel_protection_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.keyboard_cache_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.keychain_data_unprotected_after_device_powered_on" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.keychain_data_unprotected_after_first_login" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.keychain_data_unprotected_passcode_not_set" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.kms_encryption_service_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.kubernetes_dashboard_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.ldap_anonymous_authentication" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.ldap_entry_poisoning" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.least_privilege_violation" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.legacy_attribute_based_access_control" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.local_infile_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.location_tracking_enabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.log_file_validation_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.log_monitoring_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.logging_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.logging_request_parameters" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.login_over_http" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.lossy_encoding" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.malicious_url" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.markdown_allow_dangerous_html" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.message_encryption_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.microservice_authn_disabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.middleware_applied_globally" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.misconfigured_oauth2" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.missing_default_response_object" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.missing_exported_attribute" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.missing_global_exception_handler" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.missing_high_availability_support" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.missing_httponly_attribute" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.missing_httponly_attribute_csrf_cookie" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.missing_httponly_attribute_session_cookie" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.missing_iframe_sandbox" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.missing_load_balancer" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.missing_mfa" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.missing_min_sdk_version" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.missing_mtls" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.missing_network_security_policy" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.missing_perfect_forward_secrecy" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.missing_permission_on_exported_component" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.missing_samesite_attribute" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.missing_samesite_attribute_csrf_cookie" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.missing_samesite_attribute_session_cookie" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.missing_secure_attribute" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.missing_secure_attribute_csrf_cookie" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.missing_secure_attribute_remember_me_cookie" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.missing_secure_attribute_session_cookie" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.missing_security_constraint" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.missing_servlet_mapping" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.missing_target_sdk_version" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.missing_tls" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.missing_uses_sdk_version" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.missing_vpc" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.missing_x_frame_options_header" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.mixed_content_allowed" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.multi_region_configuration_aggregation_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.multi_region_logging_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.no_complexity_limit" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.no_depth_limit" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.no_password_change_on_first_login" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.no_rate_limiting" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.no_sniff_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.non_production_api_endpoint" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.non_production_route" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.null_cipher_used" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.oauth2_pkce_plaintext_challenge" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.oauth2_scope_in_token_request" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.open_smtp_relay" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.optimized_image_not_used" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.outdated_target_sdk_version" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.outdated_version_used" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.overwrite_unintended_variables" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.parameter_merging_enabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.parameters_validation_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.password_change_disallowed" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.password_change_without_old_password" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.password_stored_without_hash" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.permissive_intent_list" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.permissive_navigation_list" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.permissive_network_list" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.permitted_cross_domain_policies_disabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.persistent_cookie" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.plaintext_storage_sensitive_data" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.predictable_secret" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.privileged_connection_allowed" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.privileged_container_allowed" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.profiling_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.project_encryption_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.public_github_repository" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.publicly_accessible_serial_port_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.publicly_writable_directories_used" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.query_encryption_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.query_logging_enabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.referrer_policy_disabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.relative_path" : {
+    "disabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.remote_access_via_guest_account" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.remote_application_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.remote_execution_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.remote_file_inclusion" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.request_allows_any_media_type" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.request_logging_enabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.request_tracing_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.request_validation_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.response_cache_encryption_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.response_cache_used_without_validation" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.response_caching_enabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.response_logging_enabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.reverse_tabnabbing" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.root_path_attribute_cookie" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.rsa_no_padding" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.safe_browsing_options_disabled" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.sasl_plain_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.screenshot_data_leak" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.script_checks_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.script_timeout_too_long" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.seccomp_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.security_alerts_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.security_alerts_notification_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.security_scanning_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.selinux_default_configuration_override" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.sensitive_data_in_cookie" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.sensitive_data_in_query_string" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.sensitive_data_in_response" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.server_side_request_unrestricted" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.service_account_lookup_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.session_cookie_misuse" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.session_fixation_protection_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.shared_preferences_data_exposure" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.shell_missing_pipefail" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.shielded_nodes_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.shielded_vm_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.socket_accepts_all_origins" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.ssh_port_exposed" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.ssh_publicly_accessible" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.ssl_pinning_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.ssrf_with_untrusted_callback" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.state_changing_get_request" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.static_iv" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.static_non_expiring_token" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.storage_optimization_disabled" : {
+    "disabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.storage_versioning_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.stripe_validation_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.synchronized_credentials" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.tag_authorization_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.termination_protection_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.third_party_trusted" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.tiller_service_exposed" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.trace_mode_enabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.trojan_source" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.unauthenticated_readonly_access" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.unbounded_occurrences" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.uncontrolled_search_path" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.undefined_oauth2_scope" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.unfettered_resource_loading" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.unfiltered_html_allowed" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.unlimited_concurrent_sessions" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.unprotected_admin_operation" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.unprotected_master_key" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.unreliable_root_jailbreak_detection" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.unrestricted_database_access" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.unrestricted_egress" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.unrestricted_ingress" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.unrestricted_postmessage_target" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.unsafe_authentication_filter" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.unsafe_eval" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.unsafe_file_inclusion" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.unsafe_http_method" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.unsafe_innerhtml_manipulation" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.unsafe_language_feature" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.unsafe_min_os_version" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.unsafe_min_sdk_version" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.unsafe_os_command" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.unsafe_receipt_verification" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.unsafe_session_storage" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.unsafe_sms" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.unsafe_webview_usage" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.unsafe_xml_canonicalization" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.unspecified_cipher_transformation" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.unspecified_software_version" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.unused_form_bean" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.unused_security_control" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.update_command_runs_in_isolation" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.user_namespace_disabled" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.vendor_provided_encryption_key" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.verbose_error_message" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.verbose_server_banner" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.view_state_stored_on_client" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.vulnerable_software" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.waf_disabled" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.weak_auth_mechanism" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.weak_biometric_authentication" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.weak_hash" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.weak_password_hash" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.weak_password_policy" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.weak_security_constraint" : {
+    "enabled" : [
+      "Text"
+    ],
+    "unsupported" : [
+      "JavaScript"
+    ]
+  },
+  "SIGMA.weak_xss_protection" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.webview_file_access" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.webview_javascript_enabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.write_using_auxiliary_file" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.xml_entity_enabled" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIGMA.xml_external_entity_enabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGMA.xss_filter_disabled" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SIGN_EXTENSION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SIZEOF_MISMATCH" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SOCKET_ACCEPT_ALL_ORIGINS" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SQLI" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "SSRF" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "STRAY_SEMICOLON" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "STREAM_FORMAT_STATE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "STRICT_TRANSPORT_SECURITY" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SUPPRESSED_ERROR" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "SWAPPED_ARGUMENTS" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "TAINTED_ENVIRONMENT_WITH_EXECUTION" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "TAINT_ASSERT" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "TEMPLATE_INJECTION" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "TRUST_BOUNDARY_VIOLATION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNCAUGHT_EXCEPT" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNCHECKED_ORIGIN" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "UNENCRYPTED_SENSITIVE_DATA" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNEXPECTED_CONTROL_FLOW" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "UNINIT" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNINIT_CTOR" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNINTENDED_GLOBAL" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "UNINTENDED_INTEGER_DIVISION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNKNOWN_LANGUAGE_INJECTION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNLESS_CASE_SENSITIVE_ROUTE_MATCHING" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "UNLOCKED_ACCESS" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNLOGGED_SECURITY_EXCEPTION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNNECESSARY_STRING_COPY" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNREACHABLE" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "UNRESTRICTED_ACCESS_TO_FILE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNRESTRICTED_DISPATCH" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNSAFE_BASIC_AUTH" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNSAFE_DESERIALIZATION" : {
+    "enabled" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNSAFE_FUNCTIONALITY" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNSAFE_JNI" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNSAFE_NAMED_QUERY" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNSAFE_REFLECTION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNSAFE_SESSION_SETTING" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "UNUSED_VALUE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "URL_MANIPULATION" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "USELESS_CALL" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "USE_AFTER_FREE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "USE_AFTER_MOVE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "VARARGS" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "VIRTUAL_DTOR" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "VOLATILE_ATOMICITY" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "WEAK_GUARD" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "WEAK_PASSWORD_HASH" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "WRAPPER_ESCAPE" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "WRITE_CONST_FIELD" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "WRONG_METHOD" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "XML_EXTERNAL_ENTITY" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "XPATH_INJECTION" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  },
+  "XSS" : {
+    "enabled" : [
+      "JavaScript"
+    ],
+    "unsupported" : [
+      "Text"
+    ]
+  },
+  "Y2K38_SAFETY" : {
+    "unsupported" : [
+      "JavaScript",
+      "Text"
+    ]
+  }
+}

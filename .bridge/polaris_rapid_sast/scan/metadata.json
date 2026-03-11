@@ -1,0 +1,11 @@
+{
+  "applicationid": "ead3bc12-f03d-4526-88ca-9d5b1a53eae8",
+  "branchid": "48eb0aa8-06a7-4352-8661-4754a85ad017",
+  "organizationid": "e1279832-8f57-4877-8dac-5397b61106ac",
+  "portfolioitemid": "ead3bc12-f03d-4526-88ca-9d5b1a53eae8",
+  "portfoliosubitemid": "3aac21e8-7929-45e7-8aba-e3b91ebc780b",
+  "projectid": "3aac21e8-7929-45e7-8aba-e3b91ebc780b",
+  "streamid": "68ffad81-6e79-40b8-bbec-ff88a8fe9347",
+  "testid": "30526f10-9351-4058-bcf5-8b7b05710980",
+  "scan_mode": "SAST_RAPID"
+}

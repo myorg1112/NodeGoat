@@ -1,0 +1,6 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-initializer/versions/1.0.218/polaris-initializer /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_initializer/data.json
+{"level":"info","logger":"Polaris Initializer","msg":"project doesn't exist. Will create new project as 'polaris.onboarding' is set to 'true'","time":"2026-01-23 17:46:23.8686 CST"}
+{"level":"info","logger":"Polaris Initializer","msg":"No version specified for cov_thin_client, using recommended version: 2025.9.1","time":"2026-01-23 17:46:24.7876 CST"}
+{"level":"info","logger":"Polaris Initializer","msg":"No version specified for detect, using recommended version: 10.4.0","time":"2026-01-23 17:46:25.2514 CST"}
+{"level":"info","logger":"Polaris Initializer","msg":"Successfully created test for \"SCA(scaPackage)\" assessment. The short test ID is \"6O6HXTT\"","time":"2026-01-23 17:46:25.8202 CST"}
+{"level":"info","logger":"Polaris Initializer","msg":"Successfully created test for \"SAST(sastFull)\" assessment. The short test ID is \"QN0OHDD\"","time":"2026-01-23 17:46:25.9150 CST"}

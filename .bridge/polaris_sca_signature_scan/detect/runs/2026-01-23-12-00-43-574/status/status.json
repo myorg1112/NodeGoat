@@ -1,0 +1,55 @@
+{
+  "formatVersion": "0.5.0",
+  "detectVersion": "10.4.0",
+  "projectName": "NodeGoat",
+  "projectVersion": "Default Detect Version",
+  "detectors": [],
+  "status": [
+    {
+      "key": "Signature scan / Snippet scan on /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat",
+      "status": "SUCCESS"
+    }
+  ],
+  "issues": [],
+  "overallStatus": [
+    {
+      "key": "SUCCESS",
+      "status": "Detect exited successfully."
+    }
+  ],
+  "results": [],
+  "unrecognizedPaths": {},
+  "codeLocations": [],
+  "propertyValues": {
+    "blackduck.offline.mode": "true",
+    "blackduck.offline.mode.force.bdio": "true",
+    "detect.bdio.file.name": "scan",
+    "detect.bdio.output.path": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_sca_signature_scan/detect/bdio/blackduck_artifact",
+    "detect.blackduck.signature.scanner.local.path": "/home/allenl/.blackduck/bridge/tools/blackduck-detect-signature-scan/1.0.6",
+    "detect.cleanup": "false",
+    "detect.excluded.directories": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge",
+    "detect.output.path": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_sca_signature_scan/detect",
+    "detect.scan.output.path": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_sca_signature_scan/scan",
+    "detect.tools": "SIGNATURE_SCAN"
+  },
+  "operations": [
+    {
+      "startTimestamp": "2026-01-23 12:00:43.883",
+      "endTimestamp": "2026-01-23 12:00:43.885",
+      "descriptionKey": "SubProject Aggregate",
+      "status": "SUCCESS"
+    },
+    {
+      "startTimestamp": "2026-01-23 12:00:43.997",
+      "endTimestamp": "2026-01-23 12:00:43.999",
+      "descriptionKey": "Create Offline Signature Scan Batch",
+      "status": "SUCCESS"
+    },
+    {
+      "startTimestamp": "2026-01-23 12:00:43.999",
+      "endTimestamp": "2026-01-23 12:00:45.329",
+      "descriptionKey": "Execute Signature Scan CLI",
+      "status": "SUCCESS"
+    }
+  ]
+}

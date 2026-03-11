@@ -1,0 +1,4 @@
+Native Compiler invocation: ./ --coverity_resp_file=/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir/tmp/cicf-33e1628fd7f2c1f8e8ce44e4587babd9/cov-translate-resp-file1
+Working directory: /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat
+Comptype: javascript
+* Configuring JavaScript Buildless Capture (javascript)

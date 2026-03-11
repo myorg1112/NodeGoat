@@ -1,0 +1,24 @@
+# Version: ea39687f36 p-2025.9-push-60
+# Command Line: /home/allenl/.blackduck/bridge/tools/cov-analysis/2025.9.1/bin/cov-build --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir --replay-from-emit --no-security-da --replay-processes 0
+timer                              ms      calls
+------------------------------------------------
+cov-build                         256          1
+  create_or_open emit DB            1          1
+    open emit DB                    1          1
+  add_string_to_table               0          9
+  addEmitFileName                   0          1
+  addEnvironmentVars                0          1
+    add_string_to_table             0         53
+  Replay                          252          1
+  TUInfo::getPrimarySFRow           0        146
+
+activity                           ms      calls
+------------------------------------------------
+cov-build                         256          1
+create_or_open emit DB              1          1
+open emit DB                        1          1
+add_string_to_table                 0         62
+addEmitFileName                     0          1
+addEnvironmentVars                  0          1
+Replay                            252          1
+TUInfo::getPrimarySFRow             0        146

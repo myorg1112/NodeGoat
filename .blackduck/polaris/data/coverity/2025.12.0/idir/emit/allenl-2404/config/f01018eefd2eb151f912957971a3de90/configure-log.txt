@@ -1,0 +1,4 @@
+Native Compiler invocation: ./ --coverity_resp_file=/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir/tmp/cicf-5524b4ac3837f992cef4ef6c8dcd9e1d/cov-translate-resp-file6
+Working directory: /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat
+Comptype: typescript
+* Configuring TypeScript Buildless Capture

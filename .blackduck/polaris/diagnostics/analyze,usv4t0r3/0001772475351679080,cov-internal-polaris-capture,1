@@ -1,0 +1,40 @@
+Coverity Internal Polaris Capture version 2025.12.0 on Linux 6.17.0-14-generic x86_64
+Internal version numbers: 8600bcfa3c p-2025.12-push-40
+
+[INFO] Capturing files.
+[INFO] coverity 2025.12.0 covcli-2025.12-push-10
+[INFO] Loaded configuration file '/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir/coverity.empty.yaml'
+[INFO] Executing command: /home/allenl/.blackduck/polaris/coverity-tools-linux64-2025.12.0/bin/cov-manage-emit --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir reset-host-name
+[INFO] Executing command: /home/allenl/.blackduck/polaris/coverity-tools-linux64-2025.12.0/bin/cov-manage-emit --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir check-compatible
+[INFO] Detected that stdout is not connected to a terminal.  Defaulting ticker mode to 'none'.
+[INFO] If this is not correct, explicitly set the ticker mode to the desired value using the '--ticker-mode' option.
+[INFO] Telemetry is enabled
+[INFO] Executing command: /home/allenl/.blackduck/polaris/coverity-tools-linux64-2025.12.0/bin/cov-manage-emit --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir list-capture-diagnostics
+[INFO] Executing action no-op: nothing to do for initialization
+[INFO] Executing action Delete compiler configurations for intermediate directory '/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir'
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/polaris/coverity-tools-linux64-2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --javascript
+[INFO] Executing action no-op: no compilers need to be unconfigured
+[INFO] Executing action no-op: compiler configurations loaded
+[INFO] Executing action Emit files using buildless capture: /home/allenl/.blackduck/polaris/coverity-tools-linux64-2025.12.0/bin/cov-internal-capture-files --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --ticker-mode none --append-log --capture-list-file /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir/coverity-cli/capture-file-list-726479963
+[INFO] Buildless capture started.
+[INFO] Emitting 70 Files.
+[INFO] Buildless capture completed.
+[INFO] Executing action No unwanted TUs to delete
+[INFO] Executing action Action cleanup: Unwanted TUs action cleanup
+[INFO] Executing action Delete stale TUs /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir
+[INFO] Executing command: /home/allenl/.blackduck/polaris/coverity-tools-linux64-2025.12.0/bin/cov-manage-emit --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir list-capture-diagnostics
+[INFO] Executing action Invalidate capture results
+[INFO] Executing action Invoke cov-security-da: /home/allenl/.blackduck/polaris/coverity-tools-linux64-2025.12.0/bin/cov-security-da --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir --ticker-mode none
+[INFO] Executing command: /home/allenl/.blackduck/polaris/coverity-tools-linux64-2025.12.0/bin/cov-manage-emit --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir list-capture-diagnostics
+Capture summary:
+    SUCCEEDED: 89
+    INCOMPLETE: 0
+    FAILED: 0
+    IGNORED: 7
+    FILES CAPTURED: 89
+    LINES OF CODE: 32719
+[INFO] Capture phase took 481ms.
+[INFO] To analyze your project, type '/home/allenl/.blackduck/polaris/coverity-tools-linux64-2025.12.0/bin/coverity analyze --project-dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir --config /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir/coverity.empty.yaml'.
+[INFO] Emitted JavaScript 49 compilation units (100%) successfully.
+[INFO] Emitted JavaScript HTML 3 compilation units (100%) successfully.
+[INFO] Emitted Text data 22 compilation units (100%) successfully.

@@ -1,0 +1,1 @@
+/home/allenl/.blackduck/polaris/coverity-tools-linux64-2025.12.0/bin/cov-internal-polaris-capture --dir /tmp/fs_capture_temp_idir2514711286/idir --source-dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat --language javascript --just-print-matches

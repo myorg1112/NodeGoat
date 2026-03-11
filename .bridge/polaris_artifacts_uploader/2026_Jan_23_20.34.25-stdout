@@ -1,0 +1,10 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-artifacts-uploader/versions/0.2.131/polaris-artifacts-uploader /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_artifacts_uploader/data.json
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"uploading artifact for \"SAST(sastFull)\" assessment with id \"40a43019-aeaf-464c-a8d8-a0cf212b7586\"","time":"2026-01-23 20:34:25.5863 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading artifact /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip for \"SAST(sastFull)\" assessment","time":"2026-01-23 20:34:26.3547 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact:   0%  16384/5855511","time":"2026-01-23 20:34:26.3754 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact:  25%  1474560/5855511","time":"2026-01-23 20:34:26.8400 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact:  50%  2932736/5855511","time":"2026-01-23 20:34:27.2835 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact:  75%  4407296/5855511","time":"2026-01-23 20:34:27.4164 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact: 100%  5855511/5855511","time":"2026-01-23 20:34:27.5075 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"successfully uploaded artifact \"/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip\"","time":"2026-01-23 20:34:27.9994 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"successfully resumed \"SAST(sastFull)\" assessment with id \"40a43019-aeaf-464c-a8d8-a0cf212b7586\"","time":"2026-01-23 20:34:28.5656 CST"}

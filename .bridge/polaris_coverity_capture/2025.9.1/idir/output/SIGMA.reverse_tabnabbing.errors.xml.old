@@ -1,0 +1,156 @@
+<error>
+<domain>OTHER</domain>
+<lang>HTML</lang>
+<checker>SIGMA.reverse_tabnabbing</checker>
+<type>sigma.reverse_tabnabbing</type>
+<subtype>html</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/app/views/login.html</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The application uses an anchor tag whose `target` attribute is set to `_blank`, but the `rel` attribute is not set with the `noopener` value. The page opened from that target link may have the access to the `location` object of the original page through `window.opener.location`. A malicious page associated with this link will be able to navigate the original page to an arbitrary site, such as a phishing site, and thus, execute a reverse tabnabbing attack.
+Note that most contemporary browsers add the `noopener` value to the `rel` automatically by default. Thus, only users with older versions of browsers are targets for this phishing attack.}}</description>
+<line>46</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the `rel` attribute to include the `noopener` value, thus disallowing the linked page to access the original page through the `window.opener` object.}}</description>
+<line>46</line>
+</event>
+<extra>reverse_tabnabbing_html -- app/views/login.html -- ##Σ-markup - html - body - div - nav - div - ul - li - ul - li - p - a</extra>
+<subcategory>html</subcategory>
+<antecedentMerge>
+<checker>SIGMA.reverse_tabnabbing_html</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Reverse tabnabbing</type>
+<cwe>1022</cwe>
+<localEffect></localEffect>
+<longDescription>The application uses an anchor tag whose `target` attribute is set to `_blank`, but the `rel` attribute is not set with the `noopener` value. The page opened from that target link may have the access to the `location` object of the original page through `window.opener.location`. A malicious page associated with this link will be able to navigate the original page to an arbitrary site, such as a phishing site, and thus, execute a reverse tabnabbing attack.
+Note that most contemporary browsers add the `noopener` value to the `rel` automatically by default. Thus, only users with older versions of browsers are targets for this phishing attack.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>HTML</lang>
+<checker>SIGMA.reverse_tabnabbing</checker>
+<type>sigma.reverse_tabnabbing</type>
+<subtype>html</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/app/views/tutorial/a8.html</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The application uses an anchor tag whose `target` attribute is set to `_blank`, but the `rel` attribute is not set with the `noopener` value. The page opened from that target link may have the access to the `location` object of the original page through `window.opener.location`. A malicious page associated with this link will be able to navigate the original page to an arbitrary site, such as a phishing site, and thus, execute a reverse tabnabbing attack.
+Note that most contemporary browsers add the `noopener` value to the `rel` automatically by default. Thus, only users with older versions of browsers are targets for this phishing attack.}}</description>
+<line>59</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the `rel` attribute to include the `noopener` value, thus disallowing the linked page to access the original page through the `window.opener` object.}}</description>
+<line>59</line>
+</event>
+<extra>reverse_tabnabbing_html -- views/tutorial/a8.html -- ##Σ-markup - div - div - div - div - ol - li - a</extra>
+<subcategory>html</subcategory>
+<antecedentMerge>
+<checker>SIGMA.reverse_tabnabbing_html</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Reverse tabnabbing</type>
+<cwe>1022</cwe>
+<localEffect></localEffect>
+<longDescription>The application uses an anchor tag whose `target` attribute is set to `_blank`, but the `rel` attribute is not set with the `noopener` value. The page opened from that target link may have the access to the `location` object of the original page through `window.opener.location`. A malicious page associated with this link will be able to navigate the original page to an arbitrary site, such as a phishing site, and thus, execute a reverse tabnabbing attack.
+Note that most contemporary browsers add the `noopener` value to the `rel` automatically by default. Thus, only users with older versions of browsers are targets for this phishing attack.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>HTML</lang>
+<checker>SIGMA.reverse_tabnabbing</checker>
+<type>sigma.reverse_tabnabbing</type>
+<subtype>html</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/app/views/tutorial/a1.html</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The application uses an anchor tag whose `target` attribute is set to `_blank`, but the `rel` attribute is not set with the `noopener` value. The page opened from that target link may have the access to the `location` object of the original page through `window.opener.location`. A malicious page associated with this link will be able to navigate the original page to an arbitrary site, such as a phishing site, and thus, execute a reverse tabnabbing attack.
+Note that most contemporary browsers add the `noopener` value to the `rel` automatically by default. Thus, only users with older versions of browsers are targets for this phishing attack.}}</description>
+<line>141</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the `rel` attribute to include the `noopener` value, thus disallowing the linked page to access the original page through the `window.opener` object.}}</description>
+<line>141</line>
+</event>
+<extra>reverse_tabnabbing_html -- views/tutorial/a1.html -- ##Σ-markup - div - div - div - div - div - div - ul - li - a</extra>
+<subcategory>html</subcategory>
+<antecedentMerge>
+<checker>SIGMA.reverse_tabnabbing_html</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Reverse tabnabbing</type>
+<cwe>1022</cwe>
+<localEffect></localEffect>
+<longDescription>The application uses an anchor tag whose `target` attribute is set to `_blank`, but the `rel` attribute is not set with the `noopener` value. The page opened from that target link may have the access to the `location` object of the original page through `window.opener.location`. A malicious page associated with this link will be able to navigate the original page to an arbitrary site, such as a phishing site, and thus, execute a reverse tabnabbing attack.
+Note that most contemporary browsers add the `noopener` value to the `rel` automatically by default. Thus, only users with older versions of browsers are targets for this phishing attack.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>HTML</lang>
+<checker>SIGMA.reverse_tabnabbing</checker>
+<type>sigma.reverse_tabnabbing</type>
+<subtype>html</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/app/views/tutorial/a1.html</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The application uses an anchor tag whose `target` attribute is set to `_blank`, but the `rel` attribute is not set with the `noopener` value. The page opened from that target link may have the access to the `location` object of the original page through `window.opener.location`. A malicious page associated with this link will be able to navigate the original page to an arbitrary site, such as a phishing site, and thus, execute a reverse tabnabbing attack.
+Note that most contemporary browsers add the `noopener` value to the `rel` automatically by default. Thus, only users with older versions of browsers are targets for this phishing attack.}}</description>
+<line>179</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the `rel` attribute to include the `noopener` value, thus disallowing the linked page to access the original page through the `window.opener` object.}}</description>
+<line>179</line>
+</event>
+<extra>reverse_tabnabbing_html -- views/tutorial/a1.html -- ##Σ-markup - div - div - div - div - div - div - ul - li - a</extra>
+<subcategory>html</subcategory>
+<antecedentMerge>
+<checker>SIGMA.reverse_tabnabbing_html</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Reverse tabnabbing</type>
+<cwe>1022</cwe>
+<localEffect></localEffect>
+<longDescription>The application uses an anchor tag whose `target` attribute is set to `_blank`, but the `rel` attribute is not set with the `noopener` value. The page opened from that target link may have the access to the `location` object of the original page through `window.opener.location`. A malicious page associated with this link will be able to navigate the original page to an arbitrary site, such as a phishing site, and thus, execute a reverse tabnabbing attack.
+Note that most contemporary browsers add the `noopener` value to the `rel` automatically by default. Thus, only users with older versions of browsers are targets for this phishing attack.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

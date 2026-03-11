@@ -1,0 +1,3 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-sarif-issues-fetcher/versions/0.1.140/polaris-sarif-issues-fetcher /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_sarif_issues_fetcher/data.json
+{"level":"warning","logger":"Polaris SARIF Issues Fetcher","msg":"[\"sast\" assessment scan is not configured to run in \"polaris.assessment.types\", hence will skip the [\"sast\" issues","time":"2026-01-23 19:53:16.9798 CST"}
+{"level":"warning","logger":"Polaris SARIF Issues Fetcher","msg":"\"sca\"] assessment scan is not configured to run in \"polaris.assessment.types\", hence will skip the \"sca\"] issues","time":"2026-01-23 19:53:16.9799 CST"}

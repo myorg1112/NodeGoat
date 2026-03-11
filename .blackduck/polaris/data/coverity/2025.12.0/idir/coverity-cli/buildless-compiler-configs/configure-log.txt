@@ -1,0 +1,3 @@
+Native Compiler and extra args: ./ 
+Working directory: /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat
+Comptype: javascript

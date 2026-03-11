@@ -1,0 +1,9 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/downloader-adapter/versions/0.2.89/downloader-adapter /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/downloader_adapter/data.json
+{"level":"info","logger":"Tool Downloader","msg":"Beginning download for coverityLicense (0.009MB)","time":"2026-01-23 20:02:32.3638 CST"}
+{"level":"info","logger":"Tool Downloader","msg":"Download for coverityLicense completed.","time":"2026-01-23 20:02:32.3640 CST"}
+{"level":"info","logger":"Tool Downloader","msg":"Beginning download for snippetGenerator (1.228MB)","time":"2026-01-23 20:02:32.4352 CST"}
+{"level":"info","logger":"Tool Downloader","msg":"Download for snippetGenerator completed.","time":"2026-01-23 20:02:32.5095 CST"}
+{"level":"info","logger":"Tool Downloader","msg":"Beginning download for coverity (2685.891MB)","time":"2026-01-23 20:02:32.5344 CST"}
+{"level":"info","logger":"Tool Downloader","msg":"Download for coverity: Received 987.554MB of 2685.891MB (36.77%)","time":"2026-01-23 20:03:32.5346 CST"}
+{"level":"info","logger":"Tool Downloader","msg":"Download for coverity: Received 2014.282MB of 2685.891MB (74.99%)","time":"2026-01-23 20:04:32.5353 CST"}
+{"level":"info","logger":"Tool Downloader","msg":"Download for coverity completed.","time":"2026-01-23 20:05:12.5726 CST"}

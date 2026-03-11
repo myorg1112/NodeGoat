@@ -1,0 +1,2 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-initializer/versions/1.0.218/polaris-initializer /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_initializer/data.json
+{"level":"error","logger":"Polaris Initializer","msg":"portfolio service: failed to fetch project id : portfolio sub item 'NodeGoat-DAST' not found","time":"2026-01-23 20:10:05.5936 CST"}

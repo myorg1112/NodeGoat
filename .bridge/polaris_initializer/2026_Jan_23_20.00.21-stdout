@@ -1,0 +1,5 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-initializer/versions/1.0.218/polaris-initializer /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_initializer/data.json
+{"level":"info","logger":"Polaris Initializer","msg":"No version specified for detect, using recommended version: 10.4.0","time":"2026-01-23 20:00:23.5013 CST"}
+{"level":"info","logger":"Polaris Initializer","msg":"No version specified for scan_cli, using recommended version: 1.0.6","time":"2026-01-23 20:00:23.7191 CST"}
+{"level":"info","logger":"Polaris Initializer","msg":"Successfully created test for \"SCA(scaPackage)\" assessment. The short test ID is \"J4NV03C\"","time":"2026-01-23 20:00:24.2199 CST"}
+{"level":"info","logger":"Polaris Initializer","msg":"Successfully created test for \"SCA(scaSignature)\" assessment. The short test ID is \"XO387OF\"","time":"2026-01-23 20:00:24.2229 CST"}

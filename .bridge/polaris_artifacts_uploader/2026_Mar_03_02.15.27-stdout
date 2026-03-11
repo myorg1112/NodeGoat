@@ -1,0 +1,10 @@
+/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-artifacts-uploader/versions/0.2.131/polaris-artifacts-uploader /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_artifacts_uploader/data.json
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"uploading artifact for \"SAST(sastFull)\" assessment with id \"18548d1b-bc43-4b85-90b6-f136ceaa36ed\"","time":"2026-03-03 02:15:27.6956 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading artifact /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip for \"SAST(sastFull)\" assessment","time":"2026-03-03 02:15:28.4935 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact:   3%  16384/488126","time":"2026-03-03 02:15:28.6698 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact:  30%  147456/488126","time":"2026-03-03 02:15:28.6760 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact:  57%  278528/488126","time":"2026-03-03 02:15:28.6826 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact:  83%  409600/488126","time":"2026-03-03 02:15:28.6986 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact: 100%  488126/488126","time":"2026-03-03 02:15:28.7156 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"successfully uploaded artifact \"/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip\"","time":"2026-03-03 02:15:29.6957 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"successfully resumed \"SAST(sastFull)\" assessment with id \"18548d1b-bc43-4b85-90b6-f136ceaa36ed\"","time":"2026-03-03 02:15:30.1762 CST"}

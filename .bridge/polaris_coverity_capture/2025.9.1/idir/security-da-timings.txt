@@ -1,0 +1,9 @@
+# Version: ea39687f36 p-2025.9-push-60
+# Command Line: /home/allenl/.blackduck/bridge/tools/cov-analysis/2025.9.1/bin/cov-security-da --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir --ticker-mode none
+timer                         ms      calls
+-------------------------------------------
+cov_security_da::run           1          1
+
+activity                      ms      calls
+-------------------------------------------
+cov_security_da::run           1          1

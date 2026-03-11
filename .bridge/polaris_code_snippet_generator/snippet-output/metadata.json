@@ -1,0 +1,12 @@
+{
+  "applicationid": "ead3bc12-f03d-4526-88ca-9d5b1a53eae8",
+  "branchid": "48eb0aa8-06a7-4352-8661-4754a85ad017",
+  "organizationid": "e1279832-8f57-4877-8dac-5397b61106ac",
+  "portfolioitemid": "ead3bc12-f03d-4526-88ca-9d5b1a53eae8",
+  "portfoliosubitemid": "3aac21e8-7929-45e7-8aba-e3b91ebc780b",
+  "projectid": "3aac21e8-7929-45e7-8aba-e3b91ebc780b",
+  "streamid": "e246e835-7ef8-435d-b161-1c8e04f03203",
+  "testid": "b4a19076-b478-4046-b3a8-949762847ac3",
+  "scan_mode": "SAST-FULL-ISSUE-UPLOAD",
+  "code_snippets_included": true
+}

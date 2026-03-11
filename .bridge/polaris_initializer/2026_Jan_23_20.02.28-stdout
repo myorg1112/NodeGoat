@@ -1,0 +1,4 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-initializer/versions/1.0.218/polaris-initializer /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_initializer/data.json
+{"level":"info","logger":"Polaris Initializer","msg":"No version specified for coverity-analysis, using recommended version: 2025.9.1","time":"2026-01-23 20:02:29.8899 CST"}
+{"level":"info","logger":"Polaris Initializer","msg":"No version specified for polaris-snippet-generator, using recommended version: 1.0.180","time":"2026-01-23 20:02:30.3290 CST"}
+{"level":"info","logger":"Polaris Initializer","msg":"Successfully created test for \"SAST(sastFullIssueUpload)\" assessment. The short test ID is \"4REZLJQ\"","time":"2026-01-23 20:02:30.8542 CST"}

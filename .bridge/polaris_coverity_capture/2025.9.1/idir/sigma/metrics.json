@@ -1,0 +1,81 @@
+{
+  "V1": {
+    "file_metrics": {
+      "files_discovered": 511,
+      "files_analyzed": 94,
+      "skipped_files_code_exclusion": 408,
+      "skipped_files_scm_ignored": 0,
+      "skipped_files_too_large": 1,
+      "skipped_files_others": 8,
+      "files_by_language": {
+        "HTML": 24,
+        "JSON": 8,
+        "Markdown": 3,
+        "Dockerfile": 1,
+        "JavaScript": 45,
+        "Unknown": 8,
+        "YAML": 5
+      }
+    },
+    "defect_metrics": {
+      "verbose_server_banner": {
+        "Low": 2
+      },
+      "open_redirect": {
+        "Medium": 1
+      },
+      "root_path_attribute_cookie": {
+        "Low": 1
+      },
+      "missing_iframe_sandbox": {
+        "Medium": 9
+      },
+      "expression_escaping_disabled": {
+        "Medium": 1
+      },
+      "container_filesystem_write": {
+        "Low": 2
+      },
+      "exposed_secret": {
+        "Medium": 1
+      },
+      "hardcoded_secret": {
+        "Medium": 11
+      },
+      "missing_secure_attribute_session_cookie": {
+        "Low": 1
+      },
+      "container_requesting_net_raw": {
+        "High": 2
+      },
+      "least_privilege_violation": {
+        "Low": 2
+      },
+      "unsafe_eval": {
+        "Low": 3
+      },
+      "container_privilege_escalation_allowed": {
+        "Low": 2
+      },
+      "missing_tls": {
+        "Low": 1
+      },
+      "sqli": {
+        "High": 1
+      },
+      "reverse_tabnabbing": {
+        "Low": 4
+      },
+      "unsafe_session_storage": {
+        "Medium": 1
+      },
+      "missing_samesite_attribute_session_cookie": {
+        "Low": 1
+      }
+    },
+    "performance": {
+      "total_duration_microseconds": 644122.0,
+      "total_duration": "1 second"
+    }
+  }
+}

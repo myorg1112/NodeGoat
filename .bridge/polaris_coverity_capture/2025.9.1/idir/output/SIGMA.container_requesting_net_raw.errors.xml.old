@@ -1,0 +1,74 @@
+<error>
+<domain>OTHER</domain>
+<lang>Text</lang>
+<checker>SIGMA.container_requesting_net_raw</checker>
+<type>sigma.container_requesting_net_raw</type>
+<subtype>docker_compose</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/docker-compose.yml</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The Docker container requests the `NET_RAW` capability, either explicitly or by default, granting access to the host's network interfaces.}}</description>
+<line>5</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Explicitly remove the `NET_RAW` capability by adding either `NET_RAW` or `ALL` to the `cap_drop` list and avoiding the `NET_RAW` capability in the `cap_add` list.}}</description>
+<line>5</line>
+</event>
+<extra>container_requesting_net_raw_docker_compose -- //docker-compose.yml -- ##Σ-markup - ##Σ-markup - services - web</extra>
+<subcategory>docker_compose</subcategory>
+<antecedentMerge>
+<checker>SIGMA.container_requesting_net_raw_docker_compose</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>Container requests ability to craft raw network packets</type>
+<cwe>269</cwe>
+<localEffect></localEffect>
+<longDescription>The Docker container requests the `NET_RAW` capability, either explicitly or by default, granting access to the host's network interfaces.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>Text</lang>
+<checker>SIGMA.container_requesting_net_raw</checker>
+<type>sigma.container_requesting_net_raw</type>
+<subtype>docker_compose</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/docker-compose.yml</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The Docker container requests the `NET_RAW` capability, either explicitly or by default, granting access to the host's network interfaces.}}</description>
+<line>14</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Explicitly remove the `NET_RAW` capability by adding either `NET_RAW` or `ALL` to the `cap_drop` list and avoiding the `NET_RAW` capability in the `cap_add` list.}}</description>
+<line>14</line>
+</event>
+<extra>container_requesting_net_raw_docker_compose -- //docker-compose.yml -- ##Σ-markup - ##Σ-markup - services - mongo</extra>
+<subcategory>docker_compose</subcategory>
+<antecedentMerge>
+<checker>SIGMA.container_requesting_net_raw_docker_compose</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>Container requests ability to craft raw network packets</type>
+<cwe>269</cwe>
+<localEffect></localEffect>
+<longDescription>The Docker container requests the `NET_RAW` capability, either explicitly or by default, granting access to the host's network interfaces.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

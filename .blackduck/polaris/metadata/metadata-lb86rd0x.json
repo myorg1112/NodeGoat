@@ -1,0 +1,29 @@
+{
+ "platform": "linux64",
+ "name": "Coverity",
+ "version": "2025.12.0",
+ "toolMeta": {
+  "captureSize": 1777935,
+  "sourceLanguages": [
+   "JavaScript",
+   "HTML",
+   "JavaScript HTML",
+   "Text data"
+  ],
+  "sourceLanguageSize": {
+   "HTML": 121571,
+   "JavaScript": 95411,
+   "JavaScript HTML": 16649,
+   "Text data": 1448086
+  },
+  "cliUsageTime": {
+   "initialize": 1189,
+   "setup": 273,
+   "configure": 783,
+   "install": 960,
+   "capture": 2145,
+   "prepare": 4,
+   "total": 5354
+  }
+ }
+}

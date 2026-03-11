@@ -1,0 +1,2 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-initializer/versions/1.0.218/polaris-initializer /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_initializer/data.json
+{"level":"error","logger":"Polaris Initializer","msg":"Invalid location 'local' for SCA assessment. Supported locations are: hybrid, remote","time":"2026-01-23 20:30:00.7378 CST"}

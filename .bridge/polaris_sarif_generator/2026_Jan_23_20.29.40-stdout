@@ -1,0 +1,3 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/sarif-generator/versions/0.1.170/sarif-generator /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_sarif_generator/data.json
+{"level":"info","logger":"SARIF Generator","msg":"Will create rules with SCA component-version pairs grouped by their related vulnerabilities in the SARIF report. Since \"polaris.reports.sarif.groupSCAIssues\" is configured to \"true\"","time":"2026-01-23 20:29:40.6041 CST"}
+{"level":"info","logger":"SARIF Generator","msg":"SARIF report created successfully at ./sarif-sca-only.sarif","time":"2026-01-23 20:29:40.6129 CST"}

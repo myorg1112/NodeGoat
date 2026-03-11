@@ -1,0 +1,5 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-waiter/versions/0.2.92/polaris-waiter /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_waiter/data.json
+{"level":"info","logger":"Polaris Waiter","msg":"Waiting for test with assessment type \"SCA(scaPackage)\" and id \"a6716dc1-654f-40be-86d3-f324f4080401\"","time":"2026-01-23 20:30:24.9390 CST"}
+{"level":"info","logger":"Polaris Waiter","msg":"Polling Test Manager: state of test with assessment type \"SCA(scaPackage)\" and id \"a6716dc1-654f-40be-86d3-f324f4080401\" is \"Waiting for Capture\"","time":"2026-01-23 20:30:25.1880 CST"}
+{"level":"info","logger":"Polaris Waiter","msg":"Polling Test Manager: state of test with assessment type \"SCA(scaPackage)\" and id \"a6716dc1-654f-40be-86d3-f324f4080401\" is \"Scanning \u0026 Publishing\"","time":"2026-01-23 20:30:35.5993 CST"}
+{"level":"info","logger":"Polaris Waiter","msg":"test with assessment type \"SCA(scaPackage)\" and id \"a6716dc1-654f-40be-86d3-f324f4080401\" completed successfully","time":"2026-01-23 20:30:56.1105 CST"}

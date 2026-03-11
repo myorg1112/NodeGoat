@@ -1,0 +1,333 @@
+<error>
+<domain>OTHER</domain>
+<lang>HTML</lang>
+<checker>SIGMA.missing_iframe_sandbox</checker>
+<type>sigma.missing_iframe_sandbox</type>
+<subtype>html</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/app/views/tutorial/a4.html</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>The `sandbox` attribute of an `iframe` is not set in HTML. This iframe loads content from a third-party site. If the JavaScript in that iframe is malicious or was compromised, an attacker can break out of the iframe, access the DOM of the main page, and mount a clickjacking or a phishing attack.</description>
+<line>32</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Enable all restrictions by setting the `sandbox` attribute of the `iframe` to an empty value, or just allow necessary capabilities by setting the `sandbox` attribute with specific value(`allow-forms`, `allow-modals`, `allow-scripts`, etc.). Avoid setting both `allow-scripts` and `allow-same-origin` at the same time as they are a vulnerable attributes combination.</description>
+<line>32</line>
+</event>
+<extra>missing_iframe_sandbox_html -- views/tutorial/a4.html -- ##Σ-markup - div - div - div - div - p - iframe</extra>
+<subcategory>html</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_iframe_sandbox_html</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>Missing iframe sandbox</type>
+<cwe>829</cwe>
+<localEffect></localEffect>
+<longDescription>The `sandbox` attribute of an `iframe` is not set in HTML. This iframe loads content from a third-party site. If the JavaScript in that iframe is malicious or was compromised, an attacker can break out of the iframe, access the DOM of the main page, and mount a clickjacking or a phishing attack.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>HTML</lang>
+<checker>SIGMA.missing_iframe_sandbox</checker>
+<type>sigma.missing_iframe_sandbox</type>
+<subtype>html</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/app/views/tutorial/a10.html</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>The `sandbox` attribute of an `iframe` is not set in HTML. This iframe loads content from a third-party site. If the JavaScript in that iframe is malicious or was compromised, an attacker can break out of the iframe, access the DOM of the main page, and mount a clickjacking or a phishing attack.</description>
+<line>31</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Enable all restrictions by setting the `sandbox` attribute of the `iframe` to an empty value, or just allow necessary capabilities by setting the `sandbox` attribute with specific value(`allow-forms`, `allow-modals`, `allow-scripts`, etc.). Avoid setting both `allow-scripts` and `allow-same-origin` at the same time as they are a vulnerable attributes combination.</description>
+<line>31</line>
+</event>
+<extra>missing_iframe_sandbox_html -- views/tutorial/a10.html -- ##Σ-markup - div - div - div - div - iframe</extra>
+<subcategory>html</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_iframe_sandbox_html</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>Missing iframe sandbox</type>
+<cwe>829</cwe>
+<localEffect></localEffect>
+<longDescription>The `sandbox` attribute of an `iframe` is not set in HTML. This iframe loads content from a third-party site. If the JavaScript in that iframe is malicious or was compromised, an attacker can break out of the iframe, access the DOM of the main page, and mount a clickjacking or a phishing attack.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>HTML</lang>
+<checker>SIGMA.missing_iframe_sandbox</checker>
+<type>sigma.missing_iframe_sandbox</type>
+<subtype>html</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/app/views/tutorial/ssrf.html</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>The `sandbox` attribute of an `iframe` is not set in HTML. This iframe loads content from a third-party site. If the JavaScript in that iframe is malicious or was compromised, an attacker can break out of the iframe, access the DOM of the main page, and mount a clickjacking or a phishing attack.</description>
+<line>23</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Enable all restrictions by setting the `sandbox` attribute of the `iframe` to an empty value, or just allow necessary capabilities by setting the `sandbox` attribute with specific value(`allow-forms`, `allow-modals`, `allow-scripts`, etc.). Avoid setting both `allow-scripts` and `allow-same-origin` at the same time as they are a vulnerable attributes combination.</description>
+<line>23</line>
+</event>
+<extra>missing_iframe_sandbox_html -- views/tutorial/ssrf.html -- ##Σ-markup - div - div - div - div - iframe</extra>
+<subcategory>html</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_iframe_sandbox_html</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>Missing iframe sandbox</type>
+<cwe>829</cwe>
+<localEffect></localEffect>
+<longDescription>The `sandbox` attribute of an `iframe` is not set in HTML. This iframe loads content from a third-party site. If the JavaScript in that iframe is malicious or was compromised, an attacker can break out of the iframe, access the DOM of the main page, and mount a clickjacking or a phishing attack.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>HTML</lang>
+<checker>SIGMA.missing_iframe_sandbox</checker>
+<type>sigma.missing_iframe_sandbox</type>
+<subtype>html</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/app/views/tutorial/a7.html</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>The `sandbox` attribute of an `iframe` is not set in HTML. This iframe loads content from a third-party site. If the JavaScript in that iframe is malicious or was compromised, an attacker can break out of the iframe, access the DOM of the main page, and mount a clickjacking or a phishing attack.</description>
+<line>30</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Enable all restrictions by setting the `sandbox` attribute of the `iframe` to an empty value, or just allow necessary capabilities by setting the `sandbox` attribute with specific value(`allow-forms`, `allow-modals`, `allow-scripts`, etc.). Avoid setting both `allow-scripts` and `allow-same-origin` at the same time as they are a vulnerable attributes combination.</description>
+<line>30</line>
+</event>
+<extra>missing_iframe_sandbox_html -- views/tutorial/a7.html -- ##Σ-markup - div - div - div - div - iframe</extra>
+<subcategory>html</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_iframe_sandbox_html</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>Missing iframe sandbox</type>
+<cwe>829</cwe>
+<localEffect></localEffect>
+<longDescription>The `sandbox` attribute of an `iframe` is not set in HTML. This iframe loads content from a third-party site. If the JavaScript in that iframe is malicious or was compromised, an attacker can break out of the iframe, access the DOM of the main page, and mount a clickjacking or a phishing attack.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>HTML</lang>
+<checker>SIGMA.missing_iframe_sandbox</checker>
+<type>sigma.missing_iframe_sandbox</type>
+<subtype>html</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/app/views/tutorial/a5.html</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>The `sandbox` attribute of an `iframe` is not set in HTML. This iframe loads content from a third-party site. If the JavaScript in that iframe is malicious or was compromised, an attacker can break out of the iframe, access the DOM of the main page, and mount a clickjacking or a phishing attack.</description>
+<line>86</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Enable all restrictions by setting the `sandbox` attribute of the `iframe` to an empty value, or just allow necessary capabilities by setting the `sandbox` attribute with specific value(`allow-forms`, `allow-modals`, `allow-scripts`, etc.). Avoid setting both `allow-scripts` and `allow-same-origin` at the same time as they are a vulnerable attributes combination.</description>
+<line>86</line>
+</event>
+<extra>missing_iframe_sandbox_html -- views/tutorial/a5.html -- ##Σ-markup - div - div - div - div - div - iframe</extra>
+<subcategory>html</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_iframe_sandbox_html</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>Missing iframe sandbox</type>
+<cwe>829</cwe>
+<localEffect></localEffect>
+<longDescription>The `sandbox` attribute of an `iframe` is not set in HTML. This iframe loads content from a third-party site. If the JavaScript in that iframe is malicious or was compromised, an attacker can break out of the iframe, access the DOM of the main page, and mount a clickjacking or a phishing attack.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>HTML</lang>
+<checker>SIGMA.missing_iframe_sandbox</checker>
+<type>sigma.missing_iframe_sandbox</type>
+<subtype>html</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/app/views/tutorial/a8.html</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>The `sandbox` attribute of an `iframe` is not set in HTML. This iframe loads content from a third-party site. If the JavaScript in that iframe is malicious or was compromised, an attacker can break out of the iframe, access the DOM of the main page, and mount a clickjacking or a phishing attack.</description>
+<line>42</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Enable all restrictions by setting the `sandbox` attribute of the `iframe` to an empty value, or just allow necessary capabilities by setting the `sandbox` attribute with specific value(`allow-forms`, `allow-modals`, `allow-scripts`, etc.). Avoid setting both `allow-scripts` and `allow-same-origin` at the same time as they are a vulnerable attributes combination.</description>
+<line>42</line>
+</event>
+<extra>missing_iframe_sandbox_html -- views/tutorial/a8.html -- ##Σ-markup - div - div - div - div - iframe</extra>
+<subcategory>html</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_iframe_sandbox_html</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>Missing iframe sandbox</type>
+<cwe>829</cwe>
+<localEffect></localEffect>
+<longDescription>The `sandbox` attribute of an `iframe` is not set in HTML. This iframe loads content from a third-party site. If the JavaScript in that iframe is malicious or was compromised, an attacker can break out of the iframe, access the DOM of the main page, and mount a clickjacking or a phishing attack.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>HTML</lang>
+<checker>SIGMA.missing_iframe_sandbox</checker>
+<type>sigma.missing_iframe_sandbox</type>
+<subtype>html</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/app/views/tutorial/a3.html</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>The `sandbox` attribute of an `iframe` is not set in HTML. This iframe loads content from a third-party site. If the JavaScript in that iframe is malicious or was compromised, an attacker can break out of the iframe, access the DOM of the main page, and mount a clickjacking or a phishing attack.</description>
+<line>157</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Enable all restrictions by setting the `sandbox` attribute of the `iframe` to an empty value, or just allow necessary capabilities by setting the `sandbox` attribute with specific value(`allow-forms`, `allow-modals`, `allow-scripts`, etc.). Avoid setting both `allow-scripts` and `allow-same-origin` at the same time as they are a vulnerable attributes combination.</description>
+<line>157</line>
+</event>
+<extra>missing_iframe_sandbox_html -- views/tutorial/a3.html -- ##Σ-markup - div - div - div - div - iframe</extra>
+<subcategory>html</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_iframe_sandbox_html</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>Missing iframe sandbox</type>
+<cwe>829</cwe>
+<localEffect></localEffect>
+<longDescription>The `sandbox` attribute of an `iframe` is not set in HTML. This iframe loads content from a third-party site. If the JavaScript in that iframe is malicious or was compromised, an attacker can break out of the iframe, access the DOM of the main page, and mount a clickjacking or a phishing attack.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>HTML</lang>
+<checker>SIGMA.missing_iframe_sandbox</checker>
+<type>sigma.missing_iframe_sandbox</type>
+<subtype>html</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/app/views/tutorial/a1.html</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>The `sandbox` attribute of an `iframe` is not set in HTML. This iframe loads content from a third-party site. If the JavaScript in that iframe is malicious or was compromised, an attacker can break out of the iframe, access the DOM of the main page, and mount a clickjacking or a phishing attack.</description>
+<line>79</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Enable all restrictions by setting the `sandbox` attribute of the `iframe` to an empty value, or just allow necessary capabilities by setting the `sandbox` attribute with specific value(`allow-forms`, `allow-modals`, `allow-scripts`, etc.). Avoid setting both `allow-scripts` and `allow-same-origin` at the same time as they are a vulnerable attributes combination.</description>
+<line>79</line>
+</event>
+<extra>missing_iframe_sandbox_html -- views/tutorial/a1.html -- ##Σ-markup - div - div - div - div - div - div - iframe</extra>
+<subcategory>html</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_iframe_sandbox_html</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>Missing iframe sandbox</type>
+<cwe>829</cwe>
+<localEffect></localEffect>
+<longDescription>The `sandbox` attribute of an `iframe` is not set in HTML. This iframe loads content from a third-party site. If the JavaScript in that iframe is malicious or was compromised, an attacker can break out of the iframe, access the DOM of the main page, and mount a clickjacking or a phishing attack.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>HTML</lang>
+<checker>SIGMA.missing_iframe_sandbox</checker>
+<type>sigma.missing_iframe_sandbox</type>
+<subtype>html</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/app/views/tutorial/a1.html</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>The `sandbox` attribute of an `iframe` is not set in HTML. This iframe loads content from a third-party site. If the JavaScript in that iframe is malicious or was compromised, an attacker can break out of the iframe, access the DOM of the main page, and mount a clickjacking or a phishing attack.</description>
+<line>98</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Enable all restrictions by setting the `sandbox` attribute of the `iframe` to an empty value, or just allow necessary capabilities by setting the `sandbox` attribute with specific value(`allow-forms`, `allow-modals`, `allow-scripts`, etc.). Avoid setting both `allow-scripts` and `allow-same-origin` at the same time as they are a vulnerable attributes combination.</description>
+<line>98</line>
+</event>
+<extra>missing_iframe_sandbox_html -- views/tutorial/a1.html -- ##Σ-markup - div - div - div - div - div - div - iframe</extra>
+<subcategory>html</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_iframe_sandbox_html</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>Missing iframe sandbox</type>
+<cwe>829</cwe>
+<localEffect></localEffect>
+<longDescription>The `sandbox` attribute of an `iframe` is not set in HTML. This iframe loads content from a third-party site. If the JavaScript in that iframe is malicious or was compromised, an attacker can break out of the iframe, access the DOM of the main page, and mount a clickjacking or a phishing attack.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

@@ -1,0 +1,74 @@
+<error>
+<domain>OTHER</domain>
+<lang>Text</lang>
+<checker>SIGMA.least_privilege_violation</checker>
+<type>sigma.least_privilege_violation</type>
+<subtype>docker_compose</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/docker-compose.yml</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The Docker container is not configured to drop all default capabilities and then add only required one. Thus the container may be granted excessive privileges which violate the least privilege principle.}}</description>
+<line>5</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Remove all the default capabilities from the list of capabilities by setting the `cap_drop` value to `ALL` and then add only specific capabilities needed by a container.}}</description>
+<line>5</line>
+</event>
+<extra>least_privilege_violation_docker_compose -- //docker-compose.yml -- ##Σ-markup - ##Σ-markup - services - web</extra>
+<subcategory>docker_compose</subcategory>
+<antecedentMerge>
+<checker>SIGMA.least_privilege_violation_docker_compose</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Least privilege violation</type>
+<cwe>284</cwe>
+<localEffect></localEffect>
+<longDescription>The Docker container is not configured to drop all default capabilities and then add only required one. Thus the container may be granted excessive privileges which violate the least privilege principle.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>Text</lang>
+<checker>SIGMA.least_privilege_violation</checker>
+<type>sigma.least_privilege_violation</type>
+<subtype>docker_compose</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/docker-compose.yml</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The Docker container is not configured to drop all default capabilities and then add only required one. Thus the container may be granted excessive privileges which violate the least privilege principle.}}</description>
+<line>14</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Remove all the default capabilities from the list of capabilities by setting the `cap_drop` value to `ALL` and then add only specific capabilities needed by a container.}}</description>
+<line>14</line>
+</event>
+<extra>least_privilege_violation_docker_compose -- //docker-compose.yml -- ##Σ-markup - ##Σ-markup - services - mongo</extra>
+<subcategory>docker_compose</subcategory>
+<antecedentMerge>
+<checker>SIGMA.least_privilege_violation_docker_compose</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Least privilege violation</type>
+<cwe>284</cwe>
+<localEffect></localEffect>
+<longDescription>The Docker container is not configured to drop all default capabilities and then add only required one. Thus the container may be granted excessive privileges which violate the least privilege principle.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

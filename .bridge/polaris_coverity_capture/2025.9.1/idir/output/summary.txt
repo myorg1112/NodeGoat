@@ -1,0 +1,31 @@
+/home/allenl/.blackduck/bridge/tools/cov-analysis/2025.9.1/bin/cov-analyze --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir --strip-path /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat --ticker-mode none --recommended-security-checkers --export-summaries false --enable-scan-transparency-data 
+Analysis summary report:
+------------------------
+Files analyzed                 : 95 Total
+    HTML                       : 21
+    JavaScript                 : 48
+    Text                       : 26
+Total LoC input to cov-analyze : 3329
+Functions analyzed             : 320
+Paths analyzed                 : 705
+Time taken by analysis         : 00:00:09
+Defect occurrences found       : 48 Total
+                                  1 DEADCODE
+                                  1 OPEN_REDIRECT
+                                  2 SIGMA.container_filesystem_write
+                                  2 SIGMA.container_privilege_escalation_allowed
+                                  2 SIGMA.container_requesting_net_raw
+                                  1 SIGMA.exposed_secret
+                                  1 SIGMA.expression_escaping_disabled
+                                 11 SIGMA.hardcoded_secret
+                                  2 SIGMA.least_privilege_violation
+                                  9 SIGMA.missing_iframe_sandbox
+                                  1 SIGMA.missing_samesite_attribute_session_cookie
+                                  1 SIGMA.missing_secure_attribute_session_cookie
+                                  1 SIGMA.missing_tls
+                                  4 SIGMA.reverse_tabnabbing
+                                  1 SIGMA.root_path_attribute_cookie
+                                  3 SIGMA.unsafe_eval
+                                  1 SIGMA.unsafe_session_storage
+                                  2 SIGMA.verbose_server_banner
+                                  2 SQLI

@@ -1,0 +1,65 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/sigma-adapter/versions/0.1.77/sigma-adapter scan /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_rapid_sast/data.json
+{"level":"info","logger":"Sigma Adapter","msg":"command: /home/allenl/.blackduck/bridge/tools/sigma/2025.12.0/sigma --internal-telemetry-format datalake --internal-dump-telemetry-to-file /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_rapid_sast/telemetry.json --internal-polaris-scan-log /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_rapid_sast/scanlog.json --internal-root-coverity-config analyze --internal-polaris-metrics-file /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_rapid_sast/metrics.json --internal-disable-checks-by-lang-in-coverity-v0 true --internal-polaris-scan-output /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_rapid_sast/scan --format AVRO-COMMIT","time":"2026-01-23 19:59:49.7441 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"Copyright (c) 2025 Black Duck Software, Inc.","time":"2026-01-23 19:59:49.7473 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"Sigma version : 2025.12.0","time":"2026-01-23 19:59:49.7474 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"For documentation and support, visit https://documentation.blackduck.com/bundle/sigma-ug/page/topics/sigma_user_guide.html","time":"2026-01-23 19:59:49.7474 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"By using this software, the user accepts the terms of Black Duck Software's end user software license and maintenance agreement found at: https://www.blackduck.com/company/legal.html","time":"2026-01-23 19:59:49.7474 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"","time":"2026-01-23 19:59:49.7475 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"WARNING: No input was provided, analyzing current working directory","time":"2026-01-23 19:59:49.7475 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"[2026-01-23 11:59:50 (ThreadId(019)|RayonId(None))] Excluded 111 file paths from analysis.","time":"2026-01-23 19:59:50.4740 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"[2026-01-23 11:59:50 (ThreadId(025)|RayonId(None))] Telemetry data conforms to schema 389ecb1ef80f2de68f80e7fc829bd3fd8fefc1c04b1d25525e38c54703cdc8ed","time":"2026-01-23 19:59:50.5208 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"Analysis done in 1 second","time":"2026-01-23 19:59:50.0000 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"Found 46 defects","time":"2026-01-23 19:59:50.0000 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"","time":"2026-01-23 19:59:50.5441 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"Identified","time":"2026-01-23 19:59:50.5453 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"","time":"2026-01-23 19:59:50.5453 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│File Type │Occurrences│","time":"2026-01-23 19:59:50.5454 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"├──────────┼───────────┤","time":"2026-01-23 19:59:50.5454 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│JavaScript│         45│","time":"2026-01-23 19:59:50.5454 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│HTML      │         24│","time":"2026-01-23 19:59:50.5454 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│Unknown   │         12│","time":"2026-01-23 19:59:50.5455 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│JSON      │          8│","time":"2026-01-23 19:59:50.5455 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│YAML      │          5│","time":"2026-01-23 19:59:50.5455 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│Markdown  │          3│","time":"2026-01-23 19:59:50.5455 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│Dockerfile│          1│","time":"2026-01-23 19:59:50.5455 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"","time":"2026-01-23 19:59:50.5456 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"","time":"2026-01-23 19:59:50.5456 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"Issues","time":"2026-01-23 19:59:50.5456 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"","time":"2026-01-23 19:59:50.5456 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│              Type               │              Tags              │Occurrences│","time":"2026-01-23 19:59:50.5456 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"├─────────────────────────────────┼────────────────────────────────┼───────────┤","time":"2026-01-23 19:59:50.5457 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│hardcoded_secret_pattern         │secret                          │         11│","time":"2026-01-23 19:59:50.5457 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│missing_iframe_sandbox_html      │web, iframe                     │          9│","time":"2026-01-23 19:59:50.5457 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│reverse_tabnabbing_html          │web, client, phishing           │          4│","time":"2026-01-23 19:59:50.5457 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│unsafe_eval_core_javascript      │node, xss, rce                  │          3│","time":"2026-01-23 19:59:50.5457 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│container_filesystem_write_docker│docker, iac, cis_benchmark,     │          2│","time":"2026-01-23 19:59:50.5458 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│_compose                         │filesystem, authz               │           │","time":"2026-01-23 19:59:50.5458 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│container_privilege_escalation_al│docker, iac, cis_benchmark,     │          2│","time":"2026-01-23 19:59:50.5458 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│lowed_docker_compose             │authz                           │           │","time":"2026-01-23 19:59:50.5458 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│container_requesting_net_raw_dock│iac, docker, authz, network     │          2│","time":"2026-01-23 19:59:50.5458 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│er_compose                       │                                │           │","time":"2026-01-23 19:59:50.5459 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│least_privilege_violation_docker_│iac, docker, authz              │          2│","time":"2026-01-23 19:59:50.5459 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│compose                          │                                │           │","time":"2026-01-23 19:59:50.5459 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│verbose_server_banner_express    │web, info_leak, express         │          2│","time":"2026-01-23 19:59:50.5459 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│exposed_secret_ssh_keys          │ssh, secret, keychain           │          1│","time":"2026-01-23 19:59:50.5459 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│expression_escaping_disabled_swig│swig, web, node,                │          1│","time":"2026-01-23 19:59:50.5460 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│                                 │input_validation, xss           │           │","time":"2026-01-23 19:59:50.5460 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│missing_samesite_attribute_sessio│web, express, node, session,    │          1│","time":"2026-01-23 19:59:50.5460 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│n_cookie_express                 │cookie, csrf                    │           │","time":"2026-01-23 19:59:50.5461 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│missing_secure_attribute_session_│web, cookie, express, info_leak,│          1│","time":"2026-01-23 19:59:50.5461 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│cookie_express                   │session                         │           │","time":"2026-01-23 19:59:50.5461 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│missing_tls_node_http_server     │web, node, missing_tls,         │          1│","time":"2026-01-23 19:59:50.5461 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│                                 │info_leak, crypto               │           │","time":"2026-01-23 19:59:50.5461 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│open_redirect_core_javascript    │dataflow, authz,                │          1│","time":"2026-01-23 19:59:50.5462 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│                                 │input_validation                │           │","time":"2026-01-23 19:59:50.5462 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│root_path_attribute_cookie_expres│web, cookie, express, info_leak,│          1│","time":"2026-01-23 19:59:50.5462 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│s                                │session                         │           │","time":"2026-01-23 19:59:50.5462 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│sqli_core_javascript             │dataflow, sql, database         │          1│","time":"2026-01-23 19:59:50.5463 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│unsafe_session_storage_express_se│web, express, dos, session      │          1│","time":"2026-01-23 19:59:50.5463 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"│ssion                            │                                │           │","time":"2026-01-23 19:59:50.5463 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"","time":"2026-01-23 19:59:50.5463 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"Full results: ","time":"2026-01-23 19:59:50.5464 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bri","time":"2026-01-23 19:59:50.5464 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"dge/polaris_rapid_sast/scan","time":"2026-01-23 19:59:50.5464 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"","time":"2026-01-23 19:59:50.5464 CST"}
+{"external_parsed":true,"level":"info","logger":"Sigma Adapter","msg":"Found 46 issues in 1 second","time":"2026-01-23 19:59:50.5465 CST"}

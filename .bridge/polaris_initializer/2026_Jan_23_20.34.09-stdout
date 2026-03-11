@@ -1,0 +1,2 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-initializer/versions/1.0.218/polaris-initializer /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_initializer/data.json
+{"level":"error","logger":"Polaris Initializer","msg":"failed to pre-compute tools: The specified version 2025.6.0 for cov_thin_client is not supported. Supported versions are: 2025.9.1","time":"2026-01-23 20:34:10.4763 CST"}

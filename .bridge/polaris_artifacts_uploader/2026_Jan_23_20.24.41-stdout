@@ -1,0 +1,19 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-artifacts-uploader/versions/0.2.131/polaris-artifacts-uploader /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_artifacts_uploader/data.json
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"uploading artifact for \"SAST(sastFull)\" assessment with id \"f5659dd7-abda-436b-821f-07345de20e28\"","time":"2026-01-23 20:24:41.1255 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"uploading artifact for \"SCA(scaPackage)\" assessment with id \"fcfe370d-7e6b-4dea-9660-ae0fca0cb993\"","time":"2026-01-23 20:24:41.1256 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading artifact /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_sca_package_manager_scan/blackduck-sca-artifacts.zip for \"SCA(scaPackage)\" assessment","time":"2026-01-23 20:24:42.1745 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading artifact /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip for \"SAST(sastFull)\" assessment","time":"2026-01-23 20:24:42.1817 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SCA(scaPackage)\" artifact:  14%  16384/114985","time":"2026-01-23 20:24:42.1945 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SCA(scaPackage)\" artifact:  42%  49152/114985","time":"2026-01-23 20:24:42.1946 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SCA(scaPackage)\" artifact:  71%  81920/114985","time":"2026-01-23 20:24:42.1974 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SCA(scaPackage)\" artifact:  99%  114688/114985","time":"2026-01-23 20:24:42.1976 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SCA(scaPackage)\" artifact: 100%  114985/114985","time":"2026-01-23 20:24:42.1976 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact:   0%  16384/5616424","time":"2026-01-23 20:24:42.2003 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact:  25%  1409024/5616424","time":"2026-01-23 20:24:42.6008 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"successfully uploaded artifact \"/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_sca_package_manager_scan/blackduck-sca-artifacts.zip\"","time":"2026-01-23 20:24:42.8525 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact:  50%  2818048/5616424","time":"2026-01-23 20:24:42.9612 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact:  75%  4227072/5616424","time":"2026-01-23 20:24:43.1346 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"successfully resumed \"SCA(scaPackage)\" assessment with id \"fcfe370d-7e6b-4dea-9660-ae0fca0cb993\"","time":"2026-01-23 20:24:43.2320 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact: 100%  5616424/5616424","time":"2026-01-23 20:24:43.2791 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"successfully uploaded artifact \"/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip\"","time":"2026-01-23 20:24:43.7790 CST"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"successfully resumed \"SAST(sastFull)\" assessment with id \"f5659dd7-abda-436b-821f-07345de20e28\"","time":"2026-01-23 20:24:44.1554 CST"}

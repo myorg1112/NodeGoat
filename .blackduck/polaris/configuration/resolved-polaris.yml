@@ -1,0 +1,35 @@
+version: "1"
+project:
+  organization: sipse
+  name: allenl-migrate-test-nodegoat
+  branch: master
+  revision:
+    name: 1ef4cec20297318e654b925b2b4d6d90dc8ebcc9
+    date: "2026-01-23T18:55:36+08:00"
+  projectDir: /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat
+  captureDir: /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris
+capture:
+  fileSystem:
+    javascript:
+      files:
+      - directory: .
+      - excludeRegex: node_modules|bower_components|vendor
+  coverity:
+    buildless:
+      project:
+        languages:
+        - javascript
+analyze:
+  mode: central
+  coverity:
+    caching:
+      dlls: disable
+      jars: enable
+      pfi: enable
+      rws: disable
+      tu-caching: disable
+    usebudaforjavadotnet: disable
+install:
+  coverity:
+    version: 2025.12.0
+serverUrl: https://sipse.cop.blackduck.com

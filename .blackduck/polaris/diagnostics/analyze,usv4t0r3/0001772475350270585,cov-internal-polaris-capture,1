@@ -1,0 +1,30 @@
+Coverity Internal Polaris Capture version 2025.12.0 on Linux 6.17.0-14-generic x86_64
+Internal version numbers: 8600bcfa3c p-2025.12-push-40
+
+[INFO] Considering listed files for JavaScript and Web App Configuration.
+[INFO] Finished considering listed files for JavaScript and Web App Configuration.
+[INFO] Successfully found JavaScript files.
+[INFO] Successfully found HTML (JavaScript) files.
+[INFO] Successfully found Configuration Files (Web App Configuration) files.
+[INFO] Emitting files.
+[INFO] Buildless capture started.
+[INFO] Emitting 44 Files.
+|0----------25-----------50----------75---------100|
+****************************************************
+[INFO] Buildless capture completed.
+
+[INFO] Buildless capture started.
+[INFO] Emitting 24 Files.
+|0----------25-----------50----------75---------100|
+****************************************************
+[INFO] Buildless capture completed.
+
+[INFO] Buildless capture started.
+[INFO] Emitting 22 Files.
+|0----------25-----------50----------75---------100|
+****************************************************
+[INFO] Buildless capture completed.
+
+[INFO] Emitted JavaScript 49 compilation units (100%) successfully.
+[INFO] Emitted JavaScript HTML 3 compilation units (100%) successfully.
+[INFO] Emitted Text data 22 compilation units (100%) successfully.

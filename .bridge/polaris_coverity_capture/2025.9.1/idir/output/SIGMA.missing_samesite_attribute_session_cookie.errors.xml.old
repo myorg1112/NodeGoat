@@ -1,0 +1,40 @@
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>SIGMA.missing_samesite_attribute_session_cookie</checker>
+<type>sigma.missing_samesite_attribute_session_cookie</type>
+<subtype>express</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/server.js</file>
+<isRapidScan>true</isRapidScan>
+<function>!server.js!%IPFE</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The `cookie.sameSite` option is either undefined or set to the insecure value `none` or `false`. In all three cases, the cookie's `SameSite` attribute protections are disabled, allowing the browser to send cookies in cross-site requests. An attacker can abuse this missing protection to facilitate cross-site request forgery (CSRF) attacks.}}</description>
+<line>78</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Explicitly set the `cookie.sameSite` value to `true` or `strict` to omit cookies from all cross-origin requests. Optionally, the `cookie.sameSite` value may be set to `lax` to allow cookies in cross-site requests when the user is navigating to the cookie's origin, such as when following a link.}}</description>
+<line>78</line>
+</event>
+<extra>missing_samesite_attribute_session_cookie_express -- //server.js</extra>
+<subcategory>express</subcategory>
+<antecedentMerge>
+<function>!&lt;placeholder&gt;!%ANONYMOUS(Unknown, Unknown)Unknown</function>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.missing_samesite_attribute_session_cookie_express</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Missing or insecure samesite attribute for session cookie</type>
+<cwe>1275</cwe>
+<localEffect></localEffect>
+<longDescription>The `cookie.sameSite` option is either undefined or set to the insecure value `none` or `false`. In all three cases, the cookie's `SameSite` attribute protections are disabled, allowing the browser to send cookies in cross-site requests. An attacker can abuse this missing protection to facilitate cross-site request forgery (CSRF) attacks.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

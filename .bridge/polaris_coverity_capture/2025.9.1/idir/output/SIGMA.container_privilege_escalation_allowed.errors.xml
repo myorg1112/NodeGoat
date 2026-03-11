@@ -1,0 +1,74 @@
+<error>
+<domain>OTHER</domain>
+<lang>Text</lang>
+<checker>SIGMA.container_privilege_escalation_allowed</checker>
+<type>sigma.container_privilege_escalation_allowed</type>
+<subtype>docker_compose</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/docker-compose.yml</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>The Docker Compose file sets the `no-new-privileges` attribute to `false` or omits it as the default value is `false`. This doesn't restrict the container from acquiring additional privileges via SUID or SGID bits. This allows privilege escalation, meaning a user can set the security context of the container and can perform root-level operations.</description>
+<line>5</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Disable container privilege escalation by explicitly setting `no-new-privileges` to `true`.</description>
+<line>5</line>
+</event>
+<extra>container_privilege_escalation_allowed_docker_compose -- //docker-compose.yml -- ##Σ-markup - ##Σ-markup - services - web</extra>
+<subcategory>docker_compose</subcategory>
+<antecedentMerge>
+<checker>SIGMA.container_privilege_escalation_allowed_docker_compose</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Container privilege escalation allowed</type>
+<cwe>269</cwe>
+<localEffect></localEffect>
+<longDescription>The Docker Compose file sets the `no-new-privileges` attribute to `false` or omits it as the default value is `false`. This doesn't restrict the container from acquiring additional privileges via SUID or SGID bits. This allows privilege escalation, meaning a user can set the security context of the container and can perform root-level operations.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>Text</lang>
+<checker>SIGMA.container_privilege_escalation_allowed</checker>
+<type>sigma.container_privilege_escalation_allowed</type>
+<subtype>docker_compose</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/docker-compose.yml</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>The Docker Compose file sets the `no-new-privileges` attribute to `false` or omits it as the default value is `false`. This doesn't restrict the container from acquiring additional privileges via SUID or SGID bits. This allows privilege escalation, meaning a user can set the security context of the container and can perform root-level operations.</description>
+<line>14</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Disable container privilege escalation by explicitly setting `no-new-privileges` to `true`.</description>
+<line>14</line>
+</event>
+<extra>container_privilege_escalation_allowed_docker_compose -- //docker-compose.yml -- ##Σ-markup - ##Σ-markup - services - mongo</extra>
+<subcategory>docker_compose</subcategory>
+<antecedentMerge>
+<checker>SIGMA.container_privilege_escalation_allowed_docker_compose</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Container privilege escalation allowed</type>
+<cwe>269</cwe>
+<localEffect></localEffect>
+<longDescription>The Docker Compose file sets the `no-new-privileges` attribute to `false` or omits it as the default value is `false`. This doesn't restrict the container from acquiring additional privileges via SUID or SGID bits. This allows privilege escalation, meaning a user can set the security context of the container and can perform root-level operations.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

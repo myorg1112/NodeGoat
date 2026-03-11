@@ -1,0 +1,5 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-waiter/versions/0.2.92/polaris-waiter /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_waiter/data.json
+{"level":"info","logger":"Polaris Waiter","msg":"Waiting for test with assessment type \"SAST(sastFull)\" and id \"40a43019-aeaf-464c-a8d8-a0cf212b7586\"","time":"2026-01-23 20:34:28.6107 CST"}
+{"level":"info","logger":"Polaris Waiter","msg":"Polling Test Manager: state of test with assessment type \"SAST(sastFull)\" and id \"40a43019-aeaf-464c-a8d8-a0cf212b7586\" is \"Waiting for Capture\"","time":"2026-01-23 20:34:28.8515 CST"}
+{"level":"info","logger":"Polaris Waiter","msg":"Polling Test Manager: state of test with assessment type \"SAST(sastFull)\" and id \"40a43019-aeaf-464c-a8d8-a0cf212b7586\" is \"Scanning\"","time":"2026-01-23 20:34:39.1093 CST"}
+{"level":"info","logger":"Polaris Waiter","msg":"test with assessment type \"SAST(sastFull)\" and id \"40a43019-aeaf-464c-a8d8-a0cf212b7586\" completed successfully","time":"2026-01-23 20:34:49.3535 CST"}

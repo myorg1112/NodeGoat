@@ -1,0 +1,2 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-sarif-issues-fetcher/versions/0.1.140/polaris-sarif-issues-fetcher /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_sarif_issues_fetcher/data.json
+{"level":"info","logger":"Polaris SARIF Issues Fetcher","msg":"Fetching issues from Polaris Server...","time":"2026-01-23 20:25:57.1497 CST"}

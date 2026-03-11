@@ -1,0 +1,4 @@
+Native Compiler invocation: ./ --coverity_resp_file=/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir/tmp/cicf-8c3774178ac9debb5bc1b6017c8b6f3a/cov-translate-resp-file1
+Working directory: /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat
+Comptype: capture-config-files
+* Configuring Configuration Buildless Capture

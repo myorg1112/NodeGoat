@@ -1,0 +1,40 @@
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>SIGMA.expression_escaping_disabled</checker>
+<type>sigma.expression_escaping_disabled</type>
+<subtype>swig</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/server.js</file>
+<isRapidScan>true</isRapidScan>
+<function>!server.js!%IPFE</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>Setting the `autoescape` attribute to `false` disables the escaping mechanism of the Swig template engine. This may lead to XSS attack if untrusted data is not properly validated and escaped.</description>
+<line>137</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Set the `autoescape` attribute to `true`, or omit it as the default value is `true`.</description>
+<line>137</line>
+</event>
+<extra>expression_escaping_disabled_swig -- //server.js</extra>
+<subcategory>swig</subcategory>
+<antecedentMerge>
+<function>!&lt;placeholder&gt;!%ANONYMOUS(Unknown, Unknown)Unknown</function>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.expression_escaping_disabled_swig</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>Expression escaping is disabled</type>
+<cwe>116</cwe>
+<localEffect></localEffect>
+<longDescription>Setting the `autoescape` attribute to `false` disables the escaping mechanism of the Swig template engine. This may lead to XSS attack if untrusted data is not properly validated and escaped.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

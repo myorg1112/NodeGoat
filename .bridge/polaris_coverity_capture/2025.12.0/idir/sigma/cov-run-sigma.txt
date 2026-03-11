@@ -1,0 +1,56 @@
+Running Sigma.
+/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma --config /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/sigma/sigma-config.json --internal-polaris-scan-log /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/sigma/sigma-log.json --internal-coverity-config /tmp/cov-run-sigma-config-2797373771/coverity.yaml analyze /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat
+
+Importing sources...
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/test/e2e/integration/research_spec.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/config/env/test.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/config/config.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/routes/profile.js
+Detected UTF-8 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.github/workflows/CLAUDE.md
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/test/e2e/integration/tutorial_spec.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/routes/allocations.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/assets/js/tour/redirects-steps.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/assets/js/chart/chart-data-morris.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/test/security/profile-test.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/routes/memos.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.github/workflows/e2e-test.yml
+Detected UTF-8 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/data/memos-dao.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/config/env/development.js
+Detected UTF-8 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/data/user-dao.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/test/e2e/support/commands.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/data/research-dao.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/routes/session.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.github/workflows/lint.yml
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/Gruntfile.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/test/e2e/integration/learn_spec.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/routes/contributions.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/test/e2e/integration/memos_spec.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/artifacts/db-reset.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/test/e2e/integration/allocations_spec.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/routes/research.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/routes/error.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/test/e2e/integration/contributions_spec.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/test/e2e/integration/benefits_spec.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/test/e2e/integration/logout_spec.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/test/e2e/integration/general_spec.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/Procfile
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/config/env/all.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/test/e2e/integration/dashboard_spec.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/routes/benefits.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.gitignore
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/server.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/routes/tutorial.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/LICENSE
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/data/profile-dao.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/routes/index.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/data/allocations-dao.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/test/e2e/integration/profile_spec.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/data/benefits-dao.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/test/e2e/integration/login_spec.js
+Detected UTF-8 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/app/data/contributions-dao.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/test/e2e/plugins/index.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.github/workflows/polaris-scan.yml
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/test/e2e/integration/signup_spec.js
+Detected ISO-8859-2 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/test/e2e/support/index.js
+Detected ISO-8859-1 encoding for /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/config/env/production.js
+Completed source import.

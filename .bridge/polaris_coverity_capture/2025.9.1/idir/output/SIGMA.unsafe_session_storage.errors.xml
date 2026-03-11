@@ -1,0 +1,40 @@
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>SIGMA.unsafe_session_storage</checker>
+<type>sigma.unsafe_session_storage</type>
+<subtype>express_session</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/server.js</file>
+<isRapidScan>true</isRapidScan>
+<function>!server.js!%IPFE</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>The session storage that the `express-session` module provides explicitly or by default is insecure. This type of memory storage leaks memory under most conditions. An attacker may create numerous active sessions and cause a Denial-of-Service situation.</description>
+<line>78</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Set the `store` property to a third-party secure storage, such as MongoDB or Redis for a production environment. Use `connect-mongo` or `connect-redis` libraries accordingly to configure the session storage.</description>
+<line>78</line>
+</event>
+<extra>unsafe_session_storage_express_session -- //server.js</extra>
+<subcategory>express_session</subcategory>
+<antecedentMerge>
+<function>!&lt;placeholder&gt;!%ANONYMOUS(Unknown, Unknown)Unknown</function>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.unsafe_session_storage_express_session</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>Unsafe storage of session data</type>
+<cwe>922</cwe>
+<localEffect></localEffect>
+<longDescription>The session storage that the `express-session` module provides explicitly or by default is insecure. This type of memory storage leaks memory under most conditions. An attacker may create numerous active sessions and cause a Denial-of-Service situation.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

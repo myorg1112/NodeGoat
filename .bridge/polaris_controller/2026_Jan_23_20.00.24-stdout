@@ -1,0 +1,12 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-controller/versions/0.2.239/polaris-controller /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_controller/data.json
+{"level":"info","logger":"Polaris Controller","msg":"Running for \"sca\" assessment with scan type \"scaPackage\"","time":"2026-01-23 20:00:24.3102 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"checking \"detect\" tool installation inside bridge home directory: /home/allenl/.blackduck/bridge/tools/blackduck-detect/10.4.0","time":"2026-01-23 20:00:24.3102 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Running command:/usr/lib/jvm/java-17-openjdk-amd64/bin/java -version","time":"2026-01-23 20:00:24.3103 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Checking tool version for \"detect\" in \"/home/allenl/.blackduck/bridge/tools/blackduck-detect/10.4.0\"","time":"2026-01-23 20:00:24.3314 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Got tool version for \"detect\": 10.4.0","time":"2026-01-23 20:00:24.3330 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"\"detect\" tool is already installed...","time":"2026-01-23 20:00:24.5675 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Running for \"sca\" assessment with scan type \"scaSignature\"","time":"2026-01-23 20:00:24.5675 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"checking \"sca-signature-scan-tool\" tool installation inside bridge home directory: /home/allenl/.blackduck/bridge/tools/blackduck-detect-signature-scan/1.0.6","time":"2026-01-23 20:00:24.5675 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Running command:/usr/lib/jvm/java-17-openjdk-amd64/bin/java -version","time":"2026-01-23 20:00:24.5675 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Checking tool version for \"scan_cli\" in \"/home/allenl/.blackduck/bridge/tools/blackduck-detect-signature-scan/1.0.6\"","time":"2026-01-23 20:00:24.5890 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"either \"sca-signature-scan-tool\" tool version \"1.0.6\" not found or unable to detect existing installation, will schedule new installation","time":"2026-01-23 20:00:24.5891 CST"}

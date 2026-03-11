@@ -1,0 +1,49 @@
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>SIGMA.missing_tls</checker>
+<type>sigma.missing_tls</type>
+<subtype>node_http_server</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/server.js</file>
+<isRapidScan>true</isRapidScan>
+<function>!server.js!%IPFE</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>A web server is created using the insecure `HTTP` scheme. As a result, application data is transmitted over an insecure channel where it can be read and modified by attackers.</description>
+<line>145</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Use the `https` library instead of the `http` library, or use the `createServer` method of the `http-server` library with the `https` option set to `true` to avoid sending data over the network in cleartext.</description>
+<line>145</line>
+</event>
+<extra>missing_tls_node_http_server -- //server.js</extra>
+<subcategory>node_http_server</subcategory>
+<antecedentMerge>
+<function>!&lt;placeholder&gt;!%ANONYMOUS(Unknown, Unknown)Unknown</function>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_node_http_server</checker>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_terraform_google_sql_db</checker>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_cloudformation_elastic_search</checker>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_cloudformation_doc_db</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Missing TLS</type>
+<cwe>319</cwe>
+<localEffect></localEffect>
+<longDescription>A web server is created using the insecure `HTTP` scheme. As a result, application data is transmitted over an insecure channel where it can be read and modified by attackers.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

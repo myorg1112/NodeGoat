@@ -1,0 +1,74 @@
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>SIGMA.verbose_server_banner</checker>
+<type>sigma.verbose_server_banner</type>
+<subtype>express</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/test-vulnerable.js</file>
+<isRapidScan>true</isRapidScan>
+<function>!test-vulnerable.js!%SCRIPT</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>HTTP responses contain an `X-Powered-By` header that reveals information about the server which helps attackers exploit known vulnerabilities or craft more targeted exploits.</description>
+<line>4</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Use `app.disable('x-powered-by')` to disable the `X-Powered-By` header. If you're using an older version of Express that does not support this setting and you can't upgrade, create a middleware to call `res.removeHeader(&quot;x-powered-by&quot;)` where `res` is the response object.</description>
+<line>4</line>
+</event>
+<extra>verbose_server_banner_express -- //test-vulnerable.js</extra>
+<subcategory>express</subcategory>
+<antecedentMerge>
+<checker>SIGMA.verbose_server_banner_express</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Sending X-Powered-By header</type>
+<cwe>201</cwe>
+<localEffect></localEffect>
+<longDescription>HTTP responses contain an `X-Powered-By` header that reveals information about the server which helps attackers exploit known vulnerabilities or craft more targeted exploits.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>SIGMA.verbose_server_banner</checker>
+<type>sigma.verbose_server_banner</type>
+<subtype>express</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/server.js</file>
+<isRapidScan>true</isRapidScan>
+<function>!server.js!%SCRIPT</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>HTTP responses contain an `X-Powered-By` header that reveals information about the server which helps attackers exploit known vulnerabilities or craft more targeted exploits.</description>
+<line>15</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Use `app.disable('x-powered-by')` to disable the `X-Powered-By` header. If you're using an older version of Express that does not support this setting and you can't upgrade, create a middleware to call `res.removeHeader(&quot;x-powered-by&quot;)` where `res` is the response object.</description>
+<line>15</line>
+</event>
+<extra>verbose_server_banner_express -- //server.js</extra>
+<subcategory>express</subcategory>
+<antecedentMerge>
+<checker>SIGMA.verbose_server_banner_express</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Sending X-Powered-By header</type>
+<cwe>201</cwe>
+<localEffect></localEffect>
+<longDescription>HTTP responses contain an `X-Powered-By` header that reveals information about the server which helps attackers exploit known vulnerabilities or craft more targeted exploits.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

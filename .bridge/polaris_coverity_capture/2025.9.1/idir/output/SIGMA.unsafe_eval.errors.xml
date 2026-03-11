@@ -1,0 +1,120 @@
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>SIGMA.unsafe_eval</checker>
+<type>sigma.unsafe_eval</type>
+<subtype>core_javascript</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/app/routes/contributions.js</file>
+<isRapidScan>true</isRapidScan>
+<function>!contributions.js!ContributionsHandler:this.handleContributionsUpdate</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>The application uses an unsafe evaluation method. If attacker-controlled code reaches this method, it may lead to remote code execution, code injection, or a cross-site scripting vulnerability.</description>
+<line>32</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Whenever possible, rewrite the application without using code evaluation functions. If the application absolutely needs to use dynamic code evaluation, send hard-coded strings, or user input after the input validation to these functions. If conditional execution is needed, map user input to hardcoded values and send them to the evaluation functions.</description>
+<line>32</line>
+</event>
+<extra>unsafe_eval_core_javascript -- app/routes/contributions.js</extra>
+<subcategory>core_javascript</subcategory>
+<antecedentMerge>
+<function>!&lt;placeholder&gt;!ContributionsHandler:%ANONYMOUS(Unknown, Unknown, Unknown)Unknown</function>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.unsafe_eval_core_javascript</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Unsafe evaluation function</type>
+<cwe>676</cwe>
+<localEffect></localEffect>
+<longDescription>The application uses an unsafe evaluation method. If attacker-controlled code reaches this method, it may lead to remote code execution, code injection, or a cross-site scripting vulnerability.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>SIGMA.unsafe_eval</checker>
+<type>sigma.unsafe_eval</type>
+<subtype>core_javascript</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/app/routes/contributions.js</file>
+<isRapidScan>true</isRapidScan>
+<function>!contributions.js!ContributionsHandler:this.handleContributionsUpdate</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>The application uses an unsafe evaluation method. If attacker-controlled code reaches this method, it may lead to remote code execution, code injection, or a cross-site scripting vulnerability.</description>
+<line>33</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Whenever possible, rewrite the application without using code evaluation functions. If the application absolutely needs to use dynamic code evaluation, send hard-coded strings, or user input after the input validation to these functions. If conditional execution is needed, map user input to hardcoded values and send them to the evaluation functions.</description>
+<line>33</line>
+</event>
+<extra>unsafe_eval_core_javascript -- app/routes/contributions.js</extra>
+<subcategory>core_javascript</subcategory>
+<antecedentMerge>
+<function>!&lt;placeholder&gt;!ContributionsHandler:%ANONYMOUS(Unknown, Unknown, Unknown)Unknown</function>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.unsafe_eval_core_javascript</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Unsafe evaluation function</type>
+<cwe>676</cwe>
+<localEffect></localEffect>
+<longDescription>The application uses an unsafe evaluation method. If attacker-controlled code reaches this method, it may lead to remote code execution, code injection, or a cross-site scripting vulnerability.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>SIGMA.unsafe_eval</checker>
+<type>sigma.unsafe_eval</type>
+<subtype>core_javascript</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/app/routes/contributions.js</file>
+<isRapidScan>true</isRapidScan>
+<function>!contributions.js!ContributionsHandler:this.handleContributionsUpdate</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>The application uses an unsafe evaluation method. If attacker-controlled code reaches this method, it may lead to remote code execution, code injection, or a cross-site scripting vulnerability.</description>
+<line>34</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Whenever possible, rewrite the application without using code evaluation functions. If the application absolutely needs to use dynamic code evaluation, send hard-coded strings, or user input after the input validation to these functions. If conditional execution is needed, map user input to hardcoded values and send them to the evaluation functions.</description>
+<line>34</line>
+</event>
+<extra>unsafe_eval_core_javascript -- app/routes/contributions.js</extra>
+<subcategory>core_javascript</subcategory>
+<antecedentMerge>
+<function>!&lt;placeholder&gt;!ContributionsHandler:%ANONYMOUS(Unknown, Unknown, Unknown)Unknown</function>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.unsafe_eval_core_javascript</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Unsafe evaluation function</type>
+<cwe>676</cwe>
+<localEffect></localEffect>
+<longDescription>The application uses an unsafe evaluation method. If attacker-controlled code reaches this method, it may lead to remote code execution, code injection, or a cross-site scripting vulnerability.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

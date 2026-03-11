@@ -1,0 +1,3 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-policy-checker/versions/0.2.83/polaris-policy-checker /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_policy_checker/data.json
+{"level":"info","logger":"Polaris Policy Checker","msg":"Checking for policy violations for \"SAST(sastRapid)\" assessment...","time":"2026-01-23 20:00:03.3218 CST"}
+{"level":"info","logger":"Polaris Policy Checker","msg":"no policies were violated to break the build","time":"2026-01-23 20:00:03.6244 CST"}

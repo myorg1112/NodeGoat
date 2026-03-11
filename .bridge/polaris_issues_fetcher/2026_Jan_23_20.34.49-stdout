@@ -1,0 +1,3 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-issues-fetcher/versions/0.2.85/polaris-issues-fetcher /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_issues_fetcher/data.json
+{"level":"info","logger":"Polaris Issues Fetcher","msg":"Fetching issues for \"SAST(sastFull)\" assessment","time":"2026-01-23 20:34:49.7018 CST"}
+{"level":"info","logger":"Polaris Issues Fetcher","msg":"Successfully fetched issues for assessment type \"SAST(sastFull)\" with id \"40a43019-aeaf-464c-a8d8-a0cf212b7586\"\n {\n \"critical\": 0,\n \"high\": 2,\n \"informational\": 0,\n \"low\": 27,\n \"medium\": 14\n}\n","time":"2026-01-23 20:34:49.9526 CST"}

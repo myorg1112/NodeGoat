@@ -1,0 +1,36 @@
+{
+  "version": "2.0",
+  "scanInfo": {
+    "cliVersion": "2025.12.0",
+    "scanTime": "2026-03-02T18:15:52Z",
+    "issueApiUrl": "https://sipse.cop.blackduck.com/api/query/v0/roll-up-counts?branch-id=1db6295a-28cc-47b4-9bd0-253cc9f70d78&filter%5Bissue%5D%5Bstatus%5D%5B%24eq%5D=opened&for-child-paths=false&group-by=%5Bissue%5D%5Btaxonomy%5D%5Bid%5D%5B24fe435e-313f-4208-b0d2-3e2d1eb42403%5D&include%5Bissue%5D%5B%5D=severity&page%5Blimit%5D=25&page%5Boffset%5D=0&project-id=02df4c4d-9333-4b3f-ba68-6d5c747a9963"
+  },
+  "projectInfo": {
+    "projectId": "02df4c4d-9333-4b3f-ba68-6d5c747a9963",
+    "branchId": "1db6295a-28cc-47b4-9bd0-253cc9f70d78",
+    "revisionId": "0646299d-b769-4738-bfbd-395edbcfb1a3"
+  },
+  "tools": [
+    {
+      "toolName": "Coverity",
+      "toolVersion": "2025.12.0",
+      "jobId": "d9vn65n80t7jp370auf508m5ls",
+      "jobStatusUrl": "https://sipse.cop.blackduck.com/api/jobs/jobs/d9vn65n80t7jp370auf508m5ls",
+      "jobStatus": "COMPLETED",
+      "issueApiUrl": "https://sipse.cop.blackduck.com/api/query/v0/roll-up-counts?branch-id=1db6295a-28cc-47b4-9bd0-253cc9f70d78&filter%5Bissue%5D%5Bstatus%5D%5B%24eq%5D=opened&filter%5Bissue%5D%5Btool%5D%5Bid%5D%5B%24eq%5D=958dc7b1-6c3f-4bf6-b9d7-ad197244a683&for-child-paths=false&group-by=%5Bissue%5D%5Btaxonomy%5D%5Bid%5D%5B24fe435e-313f-4208-b0d2-3e2d1eb42403%5D&include%5Bissue%5D%5B%5D=severity&page%5Blimit%5D=25&page%5Boffset%5D=0&project-id=02df4c4d-9333-4b3f-ba68-6d5c747a9963"
+    }
+  ],
+  "issueSummary": {
+    "issuesBySeverity": {
+      "critical": 0,
+      "high": 2,
+      "medium": 12,
+      "low": 25,
+      "notSpecified": 0
+    },
+    "total": 39,
+    "newIssues": 39,
+    "closedIssues": 0,
+    "summaryUrl": "https://sipse.cop.blackduck.com/projects/02df4c4d-9333-4b3f-ba68-6d5c747a9963/branches/1db6295a-28cc-47b4-9bd0-253cc9f70d78"
+  }
+}

@@ -1,0 +1,18 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/polaris-controller/versions/0.2.239/polaris-controller /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_controller/data.json
+{"level":"info","logger":"Polaris Controller","msg":"Running for \"sca\" assessment with scan type \"scaPackage\"","time":"2026-01-23 20:24:28.9147 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"checking \"detect\" tool installation inside bridge home directory: /home/allenl/.blackduck/bridge/tools/blackduck-detect/10.4.0","time":"2026-01-23 20:24:28.9148 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Running command:/usr/lib/jvm/java-17-openjdk-amd64/bin/java -version","time":"2026-01-23 20:24:28.9148 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Checking tool version for \"detect\" in \"/home/allenl/.blackduck/bridge/tools/blackduck-detect/10.4.0\"","time":"2026-01-23 20:24:28.9366 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Got tool version for \"detect\": 10.4.0","time":"2026-01-23 20:24:28.9382 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"\"detect\" tool is already installed...","time":"2026-01-23 20:24:29.1672 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Running for \"sast\" assessment with scan type \"sastFull\"","time":"2026-01-23 20:24:29.1672 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"checking \"coverity\" tool installation inside bridge home directory: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1","time":"2026-01-23 20:24:29.1672 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Checking tool version for \"cov_thin_client\" in \"/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1\"","time":"2026-01-23 20:24:29.1672 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Running command:/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/coverity --version","time":"2026-01-23 20:24:29.1672 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Got tool version for \"cov_thin_client\": 2025.9.1","time":"2026-01-23 20:24:29.1750 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"\"coverity\" tool is already installed...","time":"2026-01-23 20:24:29.3950 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"checking \"Sigma\" tool installation inside bridge home directory: /home/allenl/.blackduck/bridge/tools/sigma/2025.12.0","time":"2026-01-23 20:24:29.3951 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Checking tool version for \"sigma\" in \"/home/allenl/.blackduck/bridge/tools/sigma/2025.12.0\"","time":"2026-01-23 20:24:29.3951 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Running command:/home/allenl/.blackduck/bridge/tools/sigma/2025.12.0/sigma --version","time":"2026-01-23 20:24:29.3951 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"Got tool version for \"sigma\": 2025.12.0","time":"2026-01-23 20:24:29.3984 CST"}
+{"level":"info","logger":"Polaris Controller","msg":"\"Sigma\" tool is already installed...","time":"2026-01-23 20:24:29.6294 CST"}

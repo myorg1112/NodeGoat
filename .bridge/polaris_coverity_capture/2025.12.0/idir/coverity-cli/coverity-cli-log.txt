@@ -1,0 +1,63 @@
+[INFO] Using lightweight capture with thin client.
+[INFO] Executing command: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-internal-manage-cache check
+[INFO] Caching is enabled.
+[INFO] Telemetry is enabled
+[INFO] Executing command: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-manage-emit --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir list-capture-diagnostics
+[INFO] Executing action no-op: nothing to do for initialization
+[INFO] Executing action Delete compiler configurations for intermediate directory '/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir'
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler gcc --comptype gcc --template
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler cc --comptype gcc --template
+[WARNING] Template config template-gcc-config-1 already exists for gcc-* and will be reused. 
+[WARNING] Template config template-gcc-config-2 already exists for *-gcc and will be reused. 
+[WARNING] Template config template-g++-config-1 already exists for g++-* and will be reused. 
+[WARNING] Template config template-g++-config-2 already exists for *-g++ and will be reused. 
+[WARNING] Template config template-ld-config-0 already exists for ld and will be reused. 
+[WARNING] Template config template-ar-config-0 already exists for ar and will be reused. 
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler c++ --comptype g++ --template
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler clang --comptype clangcc --template
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler java --comptype java --template
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler go --comptype go --template
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler ccache --comptype prefix --template
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler kotlinc --comptype kotlinc --template
+[WARNING] Template config template-java-config-0 already exists for java and will be reused. 
+[WARNING] Template config template-apt-config-0 already exists for apt and will be reused. 
+[WARNING] Template config template-javaw-config-0 already exists for javaw and will be reused. 
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler csc --comptype csc --template
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler vbc --comptype vbc --template
+[WARNING] Template config template-dotnet-config-0 already exists for dotnet and will be reused. 
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler cl --comptype msvc --template
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --dart
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --javascript
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --php
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --python
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --ruby
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --scala
+[INFO] Executing action Configure build compiler: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --comptype capture-config-files --file-regex $capture-config-files$ --template
+[WARNING] Configuration already exists for file regex $capture-config-files$
+          and it will not be updated.
+[INFO] Executing action no-op: no compilers need to be unconfigured
+[INFO] Executing action no-op: compiler configurations loaded
+[INFO] Executing action Emit files using buildless capture: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-internal-capture-files --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --ticker-mode none --append-log --capture-list-file /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/capture-file-list-283242056 --record-with-source
+[INFO] Buildless capture started.
+[INFO] Emitting 90 Files.
+[INFO] Buildless capture completed.
+[INFO] Executing action No unwanted TUs to delete
+[INFO] Executing action Action cleanup: Unwanted TUs action cleanup
+[INFO] Executing action Delete stale TUs /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir
+[INFO] Executing command: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-manage-emit --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir list-capture-diagnostics
+[INFO] Executing action Invalidate capture results
+[INFO] Executing action Invoke cov-run-sigma: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-run-sigma --project-dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir --coverity-config /tmp/cov-run-sigma-config-2797373771/coverity.yaml --sigma-binary-path /home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma --enable-telemetry
+cov-run-sigma version 2025.12.0 on Linux 6.17.0-14-generic x86_64
+Internal version numbers: 8600bcfa3c p-2025.12-push-40
+
+[INFO] Executing action Action cleanup: Coverity configuration for Sigma
+[INFO] Executing command: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-manage-emit --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir list-capture-diagnostics
+Capture summary:
+    SUCCEEDED: 97
+    INCOMPLETE: 0
+    FAILED: 0
+    IGNORED: 3
+    FILES CAPTURED: 97
+    LINES OF CODE: 33129
+[INFO] Capture phase took 4.655s.
+[INFO] To analyze your project, type '/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/coverity analyze --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir -o analyze.location=connect'.

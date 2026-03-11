@@ -1,0 +1,246 @@
+{
+  "type": "Coverity CLI Diagnostics Data",
+  "version": 1,
+  "general": {
+    "coverity-static-analysis-version": "2025.9.1"
+  },
+  "capture": {
+    "primary-capture-mode": "Auto",
+    "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/coverity capture --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir -o analyze.location=connect",
+    "working-directory": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat",
+    "project-directory": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat",
+    "intermediate-directory": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir",
+    "configuration": {
+      "command-line-overrides": [
+        "--config-override",
+        "analyze.location=connect"
+      ],
+      "effective-configuration": {
+        "analyze": {
+          "location": "connect"
+        },
+        "commit": null,
+        "caching": {
+          "bytecode": true,
+          "tu": false,
+          "wur": true
+        }
+      },
+      "configuration-hash": "c79bdb4aae5433a143feac6924c86562bd073f0227c43c7b5410b4e6cf316511"
+    },
+    "capture-summary": {
+      "files-captured": 104,
+      "ignored": 3,
+      "lines-of-code": 33123,
+      "succeeded": 104
+    },
+    "capture-rate": 100,
+    "command-info": [
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/cov-manage-emit --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir check-compatible",
+        "cwd": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache1342405390/.authKey",
+          "COVERITY_CACHE_KEY": "e246e835-7ef8-435d-b161-1c8e04f03203",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2025.12.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+        },
+        "stdout-tail": [
+          "Intermediate directory /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir is compatible"
+        ],
+        "start-time": "2026-01-23T20:34:24.198110171+08:00",
+        "end-time": "2026-01-23T20:34:24.201481568+08:00",
+        "duration": 3371399
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/cov-manage-emit --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir reset-host-name",
+        "cwd": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache1342405390/.authKey",
+          "COVERITY_CACHE_KEY": "e246e835-7ef8-435d-b161-1c8e04f03203",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2025.12.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+        },
+        "start-time": "2026-01-23T20:34:24.195751244+08:00",
+        "end-time": "2026-01-23T20:34:24.198088515+08:00",
+        "duration": 2337274
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/cov-internal-manage-cache check",
+        "cwd": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache1342405390/.authKey",
+          "COVERITY_CACHE_KEY": "e246e835-7ef8-435d-b161-1c8e04f03203",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2025.12.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+        },
+        "start-time": "2026-01-23T20:34:24.202298087+08:00",
+        "end-time": "2026-01-23T20:34:24.460588631+08:00",
+        "duration": 258290546
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/cov-manage-emit --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir list-capture-diagnostics",
+        "cwd": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache1342405390/.authKey",
+          "COVERITY_CACHE_KEY": "e246e835-7ef8-435d-b161-1c8e04f03203",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2025.12.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+        },
+        "stdout-tail": [
+          "        \"id\" : 165,",
+          "        \"source-language\" : \"Text data\",",
+          "        \"capture-percentage\" : 100,",
+          "        \"had-failures\" : false,",
+          "        \"had-recoverable-errors\" : false,",
+          "        \"had-abstract-syntax-trees\" : false",
+          "      }",
+          "    }",
+          "  ]",
+          "}"
+        ],
+        "start-time": "2026-01-23T20:34:24.464538656+08:00",
+        "end-time": "2026-01-23T20:34:24.4720675+08:00",
+        "duration": 7528841
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/cov-internal-capture-files --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir -c /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --ticker-mode none --append-log --capture-list-file /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir/coverity-cli/capture-file-list-2499587292 --record-with-source",
+        "cwd": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache1342405390/.authKey",
+          "COVERITY_CACHE_KEY": "e246e835-7ef8-435d-b161-1c8e04f03203",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2025.12.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+        },
+        "stdout-tail": [
+          "[INFO] Buildless capture started.",
+          "[INFO] Emitting 93 Files.",
+          "[INFO] Buildless capture completed."
+        ],
+        "start-time": "2026-01-23T20:34:24.498183211+08:00",
+        "end-time": "2026-01-23T20:34:24.592808331+08:00",
+        "duration": 94625115
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/cov-manage-emit @@/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir/coverity-cli/delete-unwanted-tus-action-1669039492",
+        "cwd": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache1342405390/.authKey",
+          "COVERITY_CACHE_KEY": "e246e835-7ef8-435d-b161-1c8e04f03203",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2025.12.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+        },
+        "start-time": "2026-01-23T20:34:24.592845178+08:00",
+        "end-time": "2026-01-23T20:34:24.596182804+08:00",
+        "duration": 3337627
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/cov-manage-emit --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir list-capture-diagnostics",
+        "cwd": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache1342405390/.authKey",
+          "COVERITY_CACHE_KEY": "e246e835-7ef8-435d-b161-1c8e04f03203",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2025.12.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+        },
+        "stdout-tail": [
+          "        \"id\" : 167,",
+          "        \"source-language\" : \"Text data\",",
+          "        \"capture-percentage\" : 100,",
+          "        \"had-failures\" : false,",
+          "        \"had-recoverable-errors\" : false,",
+          "        \"had-abstract-syntax-trees\" : false",
+          "      }",
+          "    }",
+          "  ]",
+          "}"
+        ],
+        "start-time": "2026-01-23T20:34:24.596258581+08:00",
+        "end-time": "2026-01-23T20:34:24.604153611+08:00",
+        "duration": 7895033
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/cov-run-sigma --project-dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir --coverity-config /tmp/cov-run-sigma-config-2722319140/coverity.yaml --sigma-binary-path /home/allenl/.blackduck/bridge/tools/sigma/2025.12.0/sigma --enable-telemetry",
+        "cwd": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache1342405390/.authKey",
+          "COVERITY_CACHE_KEY": "e246e835-7ef8-435d-b161-1c8e04f03203",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2025.12.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+        },
+        "stdout-tail": [
+          "cov-run-sigma version 2025.9.1 on Linux 6.14.0-37-generic x86_64",
+          "Internal version numbers: ea39687f36 p-2025.9-push-60",
+          ""
+        ],
+        "start-time": "2026-01-23T20:34:24.604386146+08:00",
+        "end-time": "2026-01-23T20:34:25.365762421+08:00",
+        "duration": 761376278
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/cov-manage-emit --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir list-capture-diagnostics",
+        "cwd": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache1342405390/.authKey",
+          "COVERITY_CACHE_KEY": "e246e835-7ef8-435d-b161-1c8e04f03203",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2025.12.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+        },
+        "stdout-tail": [
+          "        \"id\" : 170,",
+          "        \"source-language\" : \"Text data\",",
+          "        \"capture-percentage\" : 100,",
+          "        \"had-failures\" : false,",
+          "        \"had-recoverable-errors\" : false,",
+          "        \"had-abstract-syntax-trees\" : false",
+          "      }",
+          "    }",
+          "  ]",
+          "}"
+        ],
+        "start-time": "2026-01-23T20:34:25.372509268+08:00",
+        "end-time": "2026-01-23T20:34:25.380164517+08:00",
+        "duration": 7655250
+      }
+    ]
+  },
+  "analysis": {
+    "configuration": {}
+  }
+}

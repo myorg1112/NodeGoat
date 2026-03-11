@@ -1,0 +1,33 @@
+[INFO] Using lightweight capture with thin client.
+[INFO] Executing command: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/cov-internal-manage-cache check
+[INFO] Caching is enabled.
+[INFO] Telemetry is enabled
+[INFO] Executing command: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/cov-manage-emit --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir list-capture-diagnostics
+[INFO] Executing action no-op: nothing to do for initialization
+[INFO] Executing action no-op: skipping compiler configuration
+[INFO] Executing action no-op: no compilers need to be unconfigured
+[INFO] Executing action no-op: compiler configurations loaded
+[INFO] Executing action Emit files using buildless capture: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/cov-internal-capture-files --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir -c /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --ticker-mode none --append-log --capture-list-file /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir/coverity-cli/capture-file-list-2499587292 --record-with-source
+[INFO] Buildless capture started.
+[INFO] Emitting 93 Files.
+[INFO] Buildless capture completed.
+[INFO] Executing action Delete unwanted TUs: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/cov-manage-emit @@/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir/coverity-cli/delete-unwanted-tus-action-1669039492
+[INFO] Executing action Action cleanup: Unwanted TUs action cleanup
+[INFO] Executing action deleteResidualTUs /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir
+[INFO] Executing command: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/cov-manage-emit --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir list-capture-diagnostics
+[INFO] Executing action Invalidate capture results
+[INFO] Executing action Invoke cov-run-sigma: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/cov-run-sigma --project-dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir --coverity-config /tmp/cov-run-sigma-config-2722319140/coverity.yaml --sigma-binary-path /home/allenl/.blackduck/bridge/tools/sigma/2025.12.0/sigma --enable-telemetry
+cov-run-sigma version 2025.9.1 on Linux 6.14.0-37-generic x86_64
+Internal version numbers: ea39687f36 p-2025.9-push-60
+
+[INFO] Executing action Action cleanup: Coverity configuration for Sigma
+[INFO] Executing command: /home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/cov-manage-emit --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir list-capture-diagnostics
+Capture summary:
+    SUCCEEDED: 104
+    INCOMPLETE: 0
+    FAILED: 0
+    IGNORED: 3
+    FILES CAPTURED: 104
+    LINES OF CODE: 33123
+[INFO] Capture phase took 921ms.
+[INFO] To analyze your project, type '/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.9.1/bin/coverity analyze --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir -o analyze.location=connect'.

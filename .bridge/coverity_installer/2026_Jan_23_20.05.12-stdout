@@ -1,0 +1,7 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/coverity-installer/versions/0.2.66/coverity-installer /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/coverity_installer/data.json
+{"level":"info","logger":"Coverity Installer","msg":"Will install Coverity local tools","time":"2026-01-23 20:05:12.6366 CST"}
+{"level":"info","logger":"Coverity Installer","msg":"Unpacking JRE ...\n","time":"2026-01-23 20:05:13.0338 CST"}
+{"level":"info","logger":"Coverity Installer","msg":"Starting Installer ...\n","time":"2026-01-23 20:05:13.6539 CST"}
+{"level":"info","logger":"Coverity Installer","msg":"The installation directory has been set to /home/allenl/.blackduck/bridge/tools/cov-analysis/2025.9.1.\n","time":"2026-01-23 20:05:14.6430 CST"}
+{"level":"info","logger":"Coverity Installer","msg":"Extracting files ...\n","time":"2026-01-23 20:05:14.7223 CST"}
+{"level":"info","logger":"Coverity Installer","msg":"Finishing installation ...\n","time":"2026-01-23 20:09:13.3812 CST"}

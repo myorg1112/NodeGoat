@@ -1,0 +1,3 @@
+/home/allenl/claude_project/kb_search/test_env/polaris/bridge-cli-bundle-linux64/adapters/downloader-adapter/versions/0.2.89/downloader-adapter /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/downloader_adapter/data.json
+{"level":"info","logger":"Tool Downloader","msg":"Beginning download for detectScanCli (95.594MB)","time":"2026-01-23 20:00:25.5361 CST"}
+{"level":"info","logger":"Tool Downloader","msg":"Download for detectScanCli completed.","time":"2026-01-23 20:00:31.6203 CST"}

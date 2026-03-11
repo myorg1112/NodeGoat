@@ -1,0 +1,40 @@
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>SIGMA.root_path_attribute_cookie</checker>
+<type>sigma.root_path_attribute_cookie</type>
+<subtype>express</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/server.js</file>
+<isRapidScan>true</isRapidScan>
+<function>!server.js!%IPFE</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>The `client-sessions`, `cookie-session` or `express-session` library sets the `path` attribute on the session cookie to the root or doesn't set `path` attribute (default value is root). If the application is hosted beneath a subdirectory and the cookie is copied to the root, then applications in other subdirectories will have access to this cookie. If any of these applications become compromised, the cookie of the victim site can be stolen from this application.</description>
+<line>78</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>Set the `path` property to the subdirectory where the application is hosted, not the root directory, to prevent the cookie from being accessed from unauthorized paths.</description>
+<line>78</line>
+</event>
+<extra>root_path_attribute_cookie_express -- //server.js</extra>
+<subcategory>express</subcategory>
+<antecedentMerge>
+<function>!&lt;placeholder&gt;!%ANONYMOUS(Unknown, Unknown)Unknown</function>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.root_path_attribute_cookie_express</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Broadly scoped session cookie path</type>
+<cwe>668</cwe>
+<localEffect></localEffect>
+<longDescription>The `client-sessions`, `cookie-session` or `express-session` library sets the `path` attribute on the session cookie to the root or doesn't set `path` attribute (default value is root). If the application is hosted beneath a subdirectory and the cookie is copied to the root, then applications in other subdirectories will have access to this cookie. If any of these applications become compromised, the cookie of the victim site can be stolen from this application.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

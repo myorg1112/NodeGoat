@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coverity SYSTEM "config.dtd">
+<coverity>
+
+<metrics>
+    <metric>
+        <name>time</name>
+        <value>1</value>
+    </metric>
+    <metric>
+        <name>args</name>
+        <value>/home/allenl/.blackduck/bridge/tools/cov-analysis/2025.9.1/bin/cov-build --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir --replay-from-emit --no-security-da --replay-processes 0</value>
+    </metric>
+    <metric>
+        <name>host</name>
+        <value>allenl-2404</value>
+    </metric>
+    <metric>
+        <name>short-platform</name>
+        <value>linux64</value>
+    </metric>
+    <metric>
+        <name>platform</name>
+        <value>Linux 6.14.0-37-generic x86_64</value>
+    </metric>
+    <metric>
+        <name>ident</name>
+        <value>2025.9.1 (build ea39687f36 p-2025.9-push-60)</value>
+    </metric>
+    <metric>
+        <name>user</name>
+        <value>allenl</value>
+    </metric>
+    <metric>
+        <name>cwd</name>
+        <value>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat</value>
+    </metric>
+    <metric>
+        <name>intermediatedir</name>
+        <value>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir</value>
+    </metric>
+    <metric>
+        <name>outputdir</name>
+        <value>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir/output</value>
+    </metric>
+    <metric>
+        <name>emitdir</name>
+        <value>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir/emit</value>
+    </metric>
+    <metric>
+        <name>force</name>
+        <value>no</value>
+    </metric>
+    <metric>
+        <name>cygwin</name>
+        <value>no</value>
+    </metric>
+    <metric>
+        <name>failures</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>successes</name>
+        <value>3</value>
+    </metric>
+    <metric>
+        <name>recoverable-errors</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>dotnet-webapps-detected</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>dotnet-webapp-successes</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>dotnet-webapp-compilation-secs</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>security-da-ms</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>buildcmd</name>
+        <value></value>
+    </metric>
+</metrics>
+</coverity>

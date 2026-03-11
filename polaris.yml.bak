@@ -1,0 +1,20 @@
+version: "1"
+project:
+  name: allenl-migrate-test-nodegoat
+  branch: master
+capture:
+  coverity:
+    buildless:
+      project:
+        languages: [javascript]
+  fileSystem:
+    javascript:
+      files:
+      - directory: ${project.projectDir}
+      - excludeRegex: node_modules|bower_components|vendor
+analyze:
+  mode: central
+install:
+  coverity:
+    version: default
+serverUrl: https://sipse.cop.blackduck.com

@@ -1,0 +1,618 @@
+{
+  "type": "Coverity CLI Diagnostics Data",
+  "version": 1,
+  "general": {
+    "coverity-static-analysis-version": "2025.12.0"
+  },
+  "capture": {
+    "primary-capture-mode": "Auto",
+    "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/coverity capture --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir -o analyze.location=connect",
+    "working-directory": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+    "project-directory": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+    "intermediate-directory": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir",
+    "configuration": {
+      "command-line-overrides": [
+        "--config-override",
+        "analyze.location=connect"
+      ],
+      "effective-configuration": {
+        "analyze": {
+          "location": "connect"
+        },
+        "commit": null,
+        "caching": {
+          "bytecode": true,
+          "tu": false,
+          "wur": true
+        }
+      },
+      "configuration-hash": "0805bbf246f34ca64f5474848c2e7c9610a5b8be1ee74049e82b745af6714734"
+    },
+    "capture-summary": {
+      "files-captured": 97,
+      "ignored": 3,
+      "lines-of-code": 33129,
+      "succeeded": 97
+    },
+    "capture-rate": 100,
+    "command-info": [
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-manage-emit --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir create",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "start-time": "2026-03-03T02:15:22.65303417+08:00",
+        "end-time": "2026-03-03T02:15:22.658865415+08:00",
+        "duration": 5831246
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-internal-manage-cache check",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "start-time": "2026-03-03T02:15:22.658999359+08:00",
+        "end-time": "2026-03-03T02:15:22.976128897+08:00",
+        "duration": 317129543
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-manage-emit --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir list-capture-diagnostics",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "{",
+          "  \"type\" : \"Coverity Capture Diagnostics\",",
+          "  \"format_version\" : 4,",
+          "  \"captured-files\" : []",
+          "}"
+        ],
+        "start-time": "2026-03-03T02:15:22.980492878+08:00",
+        "end-time": "2026-03-03T02:15:22.983129312+08:00",
+        "duration": 2636437
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler gcc --comptype gcc --template",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "",
+          "Generated coverity_config.xml at location /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml",
+          "Successfully generated configuration for the compilers: *-g++ *-gcc ar g++ g++-* gcc gcc-* ld"
+        ],
+        "start-time": "2026-03-03T02:15:22.986968228+08:00",
+        "end-time": "2026-03-03T02:15:23.183995131+08:00",
+        "duration": 197026904
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler cc --comptype gcc --template",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "",
+          "Generated coverity_config.xml at location /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml",
+          "Successfully generated configuration for the compilers: cc"
+        ],
+        "stderr-tail": [
+          "[WARNING] Template config template-gcc-config-1 already exists for gcc-* and will be reused. ",
+          "[WARNING] Template config template-gcc-config-2 already exists for *-gcc and will be reused. ",
+          "[WARNING] Template config template-g++-config-1 already exists for g++-* and will be reused. ",
+          "[WARNING] Template config template-g++-config-2 already exists for *-g++ and will be reused. ",
+          "[WARNING] Template config template-ld-config-0 already exists for ld and will be reused. ",
+          "[WARNING] Template config template-ar-config-0 already exists for ar and will be reused. "
+        ],
+        "start-time": "2026-03-03T02:15:23.184052461+08:00",
+        "end-time": "2026-03-03T02:15:23.399991419+08:00",
+        "duration": 215938961
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler c++ --comptype g++ --template",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "",
+          "Generated coverity_config.xml at location /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml",
+          "Successfully generated configuration for the compilers: c++"
+        ],
+        "start-time": "2026-03-03T02:15:23.400020736+08:00",
+        "end-time": "2026-03-03T02:15:23.601250088+08:00",
+        "duration": 201229353
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler clang --comptype clangcc --template",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "",
+          "Generated coverity_config.xml at location /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml",
+          "Successfully generated configuration for the compilers: clang clang++"
+        ],
+        "start-time": "2026-03-03T02:15:23.601286675+08:00",
+        "end-time": "2026-03-03T02:15:23.804386768+08:00",
+        "duration": 203100095
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler java --comptype java --template",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "",
+          "Generated coverity_config.xml at location /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml",
+          "Successfully generated configuration for the compilers: apt java javac javaw",
+          "Successfully generated configuration for the buildless capture patterns: jar"
+        ],
+        "start-time": "2026-03-03T02:15:23.804448739+08:00",
+        "end-time": "2026-03-03T02:15:24.004190214+08:00",
+        "duration": 199741476
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler go --comptype go --template",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "",
+          "Generated coverity_config.xml at location /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml",
+          "Successfully generated configuration for the compilers: go"
+        ],
+        "start-time": "2026-03-03T02:15:24.004229429+08:00",
+        "end-time": "2026-03-03T02:15:24.219017428+08:00",
+        "duration": 214788004
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler ccache --comptype prefix --template",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "",
+          "Generated coverity_config.xml at location /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml",
+          "Successfully generated configuration for the compilers: ccache"
+        ],
+        "start-time": "2026-03-03T02:15:24.219055163+08:00",
+        "end-time": "2026-03-03T02:15:24.469532664+08:00",
+        "duration": 250477506
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler kotlinc --comptype kotlinc --template",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "",
+          "Generated coverity_config.xml at location /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml",
+          "Successfully generated configuration for the compilers: kotlin kotlinc",
+          "Successfully generated configuration for the buildless capture patterns: android kotlin-module"
+        ],
+        "stderr-tail": [
+          "[WARNING] Template config template-java-config-0 already exists for java and will be reused. ",
+          "[WARNING] Template config template-apt-config-0 already exists for apt and will be reused. ",
+          "[WARNING] Template config template-javaw-config-0 already exists for javaw and will be reused. "
+        ],
+        "start-time": "2026-03-03T02:15:24.469572974+08:00",
+        "end-time": "2026-03-03T02:15:24.675602773+08:00",
+        "duration": 206029802
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler csc --comptype csc --template",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "",
+          "Generated coverity_config.xml at location /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml",
+          "Successfully generated configuration for the compilers: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.dll Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.exe Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.dll Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.exe Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.dll Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.exe csc csc.dll csc2 devenv dotnet msbuild razor"
+        ],
+        "start-time": "2026-03-03T02:15:24.675634441+08:00",
+        "end-time": "2026-03-03T02:15:24.878280599+08:00",
+        "duration": 202646160
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler vbc --comptype vbc --template",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "",
+          "Generated coverity_config.xml at location /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml",
+          "Successfully generated configuration for the compilers: vbc vbc.dll"
+        ],
+        "stderr-tail": [
+          "[WARNING] Template config template-dotnet-config-0 already exists for dotnet and will be reused. "
+        ],
+        "start-time": "2026-03-03T02:15:24.878316181+08:00",
+        "end-time": "2026-03-03T02:15:25.081085741+08:00",
+        "duration": 202769561
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --compiler cl --comptype msvc --template",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "",
+          "Generated coverity_config.xml at location /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml",
+          "Successfully generated configuration for the compilers: cl lib link"
+        ],
+        "start-time": "2026-03-03T02:15:25.081123422+08:00",
+        "end-time": "2026-03-03T02:15:25.296989098+08:00",
+        "duration": 215865680
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --dart",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "",
+          "Generated coverity_config.xml at location /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml",
+          "Successfully generated configuration for the buildless capture patterns: capture-config-files dart"
+        ],
+        "start-time": "2026-03-03T02:15:25.297025105+08:00",
+        "end-time": "2026-03-03T02:15:25.493815485+08:00",
+        "duration": 196790384
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --javascript",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "[NOTE] This Coverity installation only supports record with source for \"javascript\". Attempts to capture source files for this language without specifying --record-with-source to cov-build will be ignored.",
+          "",
+          "Generated coverity_config.xml at location /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml",
+          "Successfully generated configuration for the buildless capture patterns: capture-config-files html javascript jsx typescript vue"
+        ],
+        "start-time": "2026-03-03T02:15:25.49387381+08:00",
+        "end-time": "2026-03-03T02:15:25.693073973+08:00",
+        "duration": 199200167
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --php",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "",
+          "Generated coverity_config.xml at location /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml",
+          "Successfully generated configuration for the buildless capture patterns: capture-config-files php"
+        ],
+        "start-time": "2026-03-03T02:15:25.693129368+08:00",
+        "end-time": "2026-03-03T02:15:25.890296382+08:00",
+        "duration": 197167018
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --python",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "",
+          "Generated coverity_config.xml at location /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml",
+          "Successfully generated configuration for the buildless capture patterns: capture-config-files python"
+        ],
+        "start-time": "2026-03-03T02:15:25.890332288+08:00",
+        "end-time": "2026-03-03T02:15:26.090872689+08:00",
+        "duration": 200540407
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --ruby",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "",
+          "Generated coverity_config.xml at location /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml",
+          "Successfully generated configuration for the buildless capture patterns: capture-config-files ruby"
+        ],
+        "start-time": "2026-03-03T02:15:26.090913997+08:00",
+        "end-time": "2026-03-03T02:15:26.304143963+08:00",
+        "duration": 213229961
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --scala",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "",
+          "Generated coverity_config.xml at location /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml",
+          "Successfully generated configuration for the buildless capture patterns: capture-config-files scala"
+        ],
+        "start-time": "2026-03-03T02:15:26.304177314+08:00",
+        "end-time": "2026-03-03T02:15:26.501346212+08:00",
+        "duration": 197168903
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-configure -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --comptype capture-config-files --file-regex $capture-config-files$ --template",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stderr-tail": [
+          "[WARNING] Configuration already exists for file regex $capture-config-files$",
+          "          and it will not be updated."
+        ],
+        "start-time": "2026-03-03T02:15:26.5013836+08:00",
+        "end-time": "2026-03-03T02:15:26.504987578+08:00",
+        "duration": 3603977
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-internal-capture-files --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir -c /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --ticker-mode none --append-log --capture-list-file /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir/coverity-cli/capture-file-list-283242056 --record-with-source",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "[INFO] Buildless capture started.",
+          "[INFO] Emitting 90 Files.",
+          "[INFO] Buildless capture completed."
+        ],
+        "start-time": "2026-03-03T02:15:26.525219068+08:00",
+        "end-time": "2026-03-03T02:15:26.915910997+08:00",
+        "duration": 390691933
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-manage-emit --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir list-capture-diagnostics",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "        \"id\" : 90,",
+          "        \"source-language\" : \"HTML\",",
+          "        \"capture-percentage\" : 100,",
+          "        \"had-failures\" : false,",
+          "        \"had-recoverable-errors\" : false,",
+          "        \"had-abstract-syntax-trees\" : false",
+          "      }",
+          "    }",
+          "  ]",
+          "}"
+        ],
+        "start-time": "2026-03-03T02:15:26.915965622+08:00",
+        "end-time": "2026-03-03T02:15:26.921610315+08:00",
+        "duration": 5644694
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-run-sigma --project-dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir --coverity-config /tmp/cov-run-sigma-config-2797373771/coverity.yaml --sigma-binary-path /home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma --enable-telemetry",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "cov-run-sigma version 2025.12.0 on Linux 6.17.0-14-generic x86_64",
+          "Internal version numbers: 8600bcfa3c p-2025.12-push-40",
+          ""
+        ],
+        "start-time": "2026-03-03T02:15:26.921819913+08:00",
+        "end-time": "2026-03-03T02:15:27.615986129+08:00",
+        "duration": 694166207
+      },
+      {
+        "command-line": "/home/allenl/.blackduck/bridge/tools/cov-thin-client/2025.12.0/bin/cov-manage-emit --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.12.0/idir list-capture-diagnostics",
+        "cwd": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/tmp/polaris_coverity_cache2645238763/.authKey",
+          "COVERITY_CACHE_KEY": "8b0a6c2d-ebe6-46b1-a4dd-ad6e44d9121c",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/home/allenl/.blackduck/bridge/tools/sigma/2026.2.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/home/allenl/.bun/bin:/home/allenl/.local/bin:/home/allenl/.bun/bin:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/opt/mount/cov-analysis-linux64-2025.3.0/bin:/home/allenl/.nvm/versions/node/v22.21.1/bin:/usr/lib/jvm/java-17-openjdk-amd64/bin:/usr/bin:/home/allenl/dockerMount/cov-analysis-linux64-2025.3.0/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/allenl/claude_project/cases/test_env/polaris/bridge-cli-bundle-linux64"
+        },
+        "stdout-tail": [
+          "        \"id\" : 141,",
+          "        \"source-language\" : \"Text data\",",
+          "        \"capture-percentage\" : 100,",
+          "        \"had-failures\" : false,",
+          "        \"had-recoverable-errors\" : false,",
+          "        \"had-abstract-syntax-trees\" : false",
+          "      }",
+          "    }",
+          "  ]",
+          "}"
+        ],
+        "start-time": "2026-03-03T02:15:27.623896466+08:00",
+        "end-time": "2026-03-03T02:15:27.630637821+08:00",
+        "duration": 6741356
+      }
+    ]
+  },
+  "analysis": {
+    "configuration": {}
+  }
+}

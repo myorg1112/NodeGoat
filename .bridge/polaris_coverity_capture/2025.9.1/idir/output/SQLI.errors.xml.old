@@ -1,0 +1,126 @@
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>SQLI</checker>
+<type>sigma.sqli</type>
+<subtype>core_javascript</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/test-vulnerable.js</file>
+<isRapidScan>true</isRapidScan>
+<function>!test-vulnerable.js!%IPFE</function>
+<ordered>true</ordered>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{req.query is a source of tainted data}}</description>
+<line>8</line>
+</event>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{assigning to userId}}</description>
+<line>8</line>
+</event>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.}}</description>
+<line>9</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Use one of the following methods: Use a query-preparation API to safely construct the SQL query containing user-supplied values. Only concatenate a user-supplied value into a query if it has been checked against an allow list of safe string values, or if it must be a Boolean or numeric type.}}</description>
+<line>9</line>
+</event>
+<extra>userId:&quot;query&quot;,req</extra>
+<subcategory>core_javascript</subcategory>
+<antecedentMerge>
+<checker>SIGMA.sqli</checker>
+<function>!&lt;placeholder&gt;!%ANONYMOUS(Unknown, Unknown)Unknown</function>
+<extra>SqlConcatuserIdHttpqueryreq</extra>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.sqli_core_javascript</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>SQL Injection</type>
+<cwe>89</cwe>
+<localEffect></localEffect>
+<longDescription>The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>SQLI</checker>
+<type>sql_injection</type>
+<subtype>nosink</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/test-vulnerable.js</file>
+<isRapidScan>false</isRapidScan>
+<function>!test-vulnerable.js!%IPFE</function>
+<functionMergeName>!test-vulnerable.js!%IPFE</functionMergeName>
+<ordered>true</ordered>
+<event>
+<tag>taint</tag>
+<description>{CovLStrv2{{t{The property {0} is a source of untrusted data.}{{code{req.query}}}}}}</description>
+<line>8</line>
+<column>5</column>
+</event>
+<event>
+<main>true</main>
+<tag>sqli_concat</tag>
+<description>{CovLStrv2{{t{{0} is concatenated to a string that appears to form a SQL query.}{{code{userId}}}}}}</description>
+<line>9</line>
+<column>5</column>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{{t{Use one of the following methods:{0}}{{ul{{t{Use a query-preparation API to safely construct the SQL query containing user-supplied values.}}}{{t{Only concatenate a user-supplied value into a query if it has been checked against a whitelist of safe string values, or if it must be a Boolean or numeric type.}}}}}}}}</description>
+<line>9</line>
+<column>5</column>
+</event>
+<event>
+<event_set>1</event_set>
+<tag>assign</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = {1}.}{{code{app}}}{{code{express()}}}}}}</description>
+<line>4</line>
+<column>1</column>
+</event>
+<event>
+<event_set>1</event_set>
+<tag>event_handler</tag>
+<description>{CovLStrv2{{t{Calling the function {0} registers all arguments from argument {1} to the end as event handlers.}{{code{app.get}}}{2}}}}</description>
+<line>7</line>
+<column>1</column>
+</event>
+<event>
+<event_set>1</event_set>
+<tag>argument_type</tag>
+<description>{CovLStrv2{{t{Parameter {0} has type {1} when the callback function is called.}{{code{req}}}{{code{ExpressRequest}}}}}}</description>
+<line>7</line>
+<column>18</column>
+</event>
+<event>
+<event_set>1</event_set>
+<tag>sink</tag>
+<description>{CovLStrv2{{t{Calling at a later point {0}.}{{code{&lt;anonymous&gt;}}}}{t{ This call passes tainted data to a sensitive sink.}}}}</description>
+<line>7</line>
+<column>1</column>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/test-vulnerable.js</file>
+<function>!test-vulnerable.js!%IPFE</function>
+<key>1b3b9eb41ac77770a977e5e94d02d8c2</key>
+<id>5</id>
+</model_ptr>
+</event>
+<extra>userId:&quot;query&quot;,req</extra>
+<subcategory>nosink</subcategory>
+<eventSetCaptions>
+<eventSetCaption>Flow of tainted data to a vulnerable sink</eventSetCaption>
+<eventSetCaption>Additional context</eventSetCaption>
+</eventSetCaptions>
+</error>

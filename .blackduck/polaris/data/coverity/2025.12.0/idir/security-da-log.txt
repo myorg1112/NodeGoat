@@ -1,0 +1,4 @@
+/home/allenl/.blackduck/polaris/coverity-tools-linux64-2025.12.0/bin/cov-security-da --dir /home/allenl/claude_project/cases/test_env/polaris/github_test/NodeGoat/.blackduck/polaris/data/coverity/2025.12.0/idir --ticker-mode none 
+cov-security-da version 2025.12.0 on Linux 6.17.0-14-generic x86_64
+Internal version numbers: 8600bcfa3c p-2025.12-push-40
+

@@ -1,0 +1,4 @@
+/home/allenl/.blackduck/bridge/tools/cov-analysis/2025.9.1/bin/cov-security-da --dir /home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/.bridge/polaris_coverity_capture/2025.9.1/idir --ticker-mode none 
+cov-security-da version 2025.9.1 on Linux 6.14.0-37-generic x86_64
+Internal version numbers: ea39687f36 p-2025.9-push-60
+

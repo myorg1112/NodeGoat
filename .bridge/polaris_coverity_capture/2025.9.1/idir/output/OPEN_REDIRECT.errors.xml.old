@@ -1,0 +1,47 @@
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>OPEN_REDIRECT</checker>
+<type>sigma.open_redirect</type>
+<subtype>core_javascript</subtype>
+<file>/home/allenl/claude_project/kb_search/test_env/polaris/github_test/NodeGoat/app/routes/index.js</file>
+<isRapidScan>true</isRapidScan>
+<function>!index.js!index:%IPFE</function>
+<ordered>true</ordered>
+<event>
+<tag>Sigma event</tag>
+<description>{CovLStrv2{req.query is a source of tainted data}}</description>
+<line>72</line>
+</event>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{User-controlled input is used to specify an address that is used as a URL redirect or forward. An attacker can create a link to the trusted site that redirects to a malicious web site. This could enable the attacker to steal user credentials. An attacker can mount a phishing attack by modifying the URL value to point to a malicious Web site.}}</description>
+<line>72</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Validate whether the url being redirected or forwarded is present in the set of known safe URLs or redirects to a webpage from the same domain.}}</description>
+<line>72</line>
+</event>
+<extra></extra>
+<subcategory>core_javascript</subcategory>
+<antecedentMerge>
+<checker>SIGMA.open_redirect</checker>
+<function>!&lt;placeholder&gt;!%ANONYMOUS:%ANONYMOUS(Unknown, Unknown)Unknown</function>
+<extra>HttpRedirectHttpqueryreq</extra>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.open_redirect_core_javascript</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>Open Redirect</type>
+<cwe>601</cwe>
+<localEffect></localEffect>
+<longDescription>User-controlled input is used to specify an address that is used as a URL redirect or forward. An attacker can create a link to the trusted site that redirects to a malicious web site. This could enable the attacker to steal user credentials. An attacker can mount a phishing attack by modifying the URL value to point to a malicious Web site.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
