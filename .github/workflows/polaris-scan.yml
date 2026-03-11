@@ -6,6 +6,16 @@ on:
   pull_request:
     branches: [master, main]
   workflow_dispatch:
+    inputs:
+      sast_type:
+        description: 'SAST scan type'
+        required: false
+        default: ''
+        type: choice
+        options:
+          - ''
+          - 'SAST-RAPID'
+          - 'SAST-FULL'
 
 jobs:
   polaris-scan:
@@ -37,14 +47,20 @@ jobs:
         if: github.event_name != 'pull_request'
         env:
           BRIDGE_POLARIS_ACCESSTOKEN: ${{ secrets.POLARIS_ACCESS_TOKEN }}
+          SAST_TYPE: ${{ inputs.sast_type }}
         run: |
+          EXTRA_ARGS=""
+          if [ -n "$SAST_TYPE" ]; then
+            EXTRA_ARGS="polaris.test.sast.type=$SAST_TYPE"
+          fi
           ./bridge-cli-bundle-linux64/bridge-cli --stage polaris \
             polaris.serverurl="$POLARIS_URL" \
             polaris.application.name="$APP_NAME" \
             polaris.project.name="$PROJECT_NAME" \
             polaris.branch.name="$BRANCH_NAME" \
             polaris.assessment.types="SAST,SCA" \
-            polaris.onboarding=true
+            polaris.onboarding=true \
+            $EXTRA_ARGS
 
       - name: Run Polaris Scan with PR Comments
         if: github.event_name == 'pull_request'
