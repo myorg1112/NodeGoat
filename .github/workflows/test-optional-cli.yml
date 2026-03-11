@@ -1,5 +1,5 @@
-# Test: Bridge CLI optional parameters — SARIF, source excludes, SAST-RAPID
-# workflow_dispatch only — manual trigger to verify commented-out params work
+# Test: Bridge CLI optional parameters — SARIF upload + source excludes verification
+# workflow_dispatch only — manual trigger
 name: Test Optional (CLI)
 
 on:
@@ -18,17 +18,25 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Create test directory for excludes verification
+        run: |
+          mkdir -p test_exclude_dir
+          echo 'console.log("should be excluded");' > test_exclude_dir/excluded.js
+          echo "=== Files before scan ==="
+          find . -name "*.js" -not -path "./node_modules/*" -not -path "./.git/*" | head -20
+
       - name: Download Bridge CLI
         run: |
           curl -fLsS -o bridge.zip "https://repo.blackduck.com/bds-integrations-release/com/blackduck/integration/bridge/binaries/bridge-cli-bundle/latest/bridge-cli-bundle-linux64.zip"
           unzip -qo bridge.zip
           chmod +x bridge-cli-bundle-linux64/bridge-cli
 
-      - name: Polaris Scan with Optional Params
+      - name: Polaris Scan with source excludes + SARIF
         env:
           BRIDGE_POLARIS_ACCESSTOKEN: ${{ secrets.POLARIS_ACCESS_TOKEN }}
         run: |
           ./bridge-cli-bundle-linux64/bridge-cli --stage polaris \
+            --diagnostics \
             polaris.serverurl="${{ vars.POLARIS_URL }}" \
             polaris.application.name="${{ github.repository_owner }}" \
             polaris.project.name="${{ github.event.repository.name }}" \
@@ -37,19 +45,34 @@ jobs:
             polaris.onboarding=true \
             polaris.test.sast.type=SAST-RAPID \
             polaris.reports.sarif.create=true \
-            project.source.excludes='[".git","node_modules"]'
+            project.source.excludes='[".git","node_modules","test_exclude_dir"]'
 
-      - name: Find SARIF output
+      - name: Verify SARIF output exists
         if: always()
         run: |
-          echo "=== Looking for SARIF files ==="
-          find .bridge -name "*.sarif*" -o -name "*.json" | grep -i sarif || echo "No SARIF in .bridge/"
-          find .blackduck -name "*.sarif*" 2>/dev/null || echo "No SARIF in .blackduck/"
-          find . -maxdepth 2 -name "*.sarif*" 2>/dev/null || echo "No SARIF in project root"
+          echo "=== SARIF file check ==="
+          ls -la .bridge/polaris_sarif_generator/report.sarif.json 2>/dev/null && echo "SARIF FILE FOUND" || echo "SARIF FILE NOT FOUND"
+          echo ""
+          echo "=== All SARIF files ==="
+          find . -name "*.sarif*" 2>/dev/null || echo "No SARIF files anywhere"
 
-      - name: Upload SARIF
+      - name: Verify source excludes in diagnostics
+        if: always()
+        run: |
+          echo "=== Check diagnostics for source excludes ==="
+          if [ -f .bridge/bridge.log ]; then
+            grep -i "exclude\|source.*upload\|test_exclude_dir" .bridge/bridge.log | head -30 || echo "No exclude-related entries in bridge.log"
+          else
+            echo "No bridge.log found"
+          fi
+          echo ""
+          echo "=== diagnostics.json ==="
+          if [ -f .bridge/diagnostics.json ]; then
+            cat .bridge/diagnostics.json | python3 -m json.tool 2>/dev/null | grep -i "exclude\|source" | head -20 || echo "No exclude info in diagnostics.json"
+          fi
+
+      - name: Upload SARIF to GitHub Code Scanning
         if: always()
         uses: github/codeql-action/upload-sarif@v3
         with:
-          sarif_file: .bridge/polaris_sarif_generator/
-        continue-on-error: true  # don't fail the workflow if SARIF path is wrong — we'll see the error
+          sarif_file: .bridge/polaris_sarif_generator/report.sarif.json
