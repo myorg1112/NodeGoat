@@ -155,3 +155,9 @@ MongoClient.connect(db, (err, db) => {
     */
 
 });
+
+// Test endpoint for security scan validation
+app.get('/api/test-info', function(req, res) {
+    var userInput = req.query.name;
+    res.send('<h1>Hello ' + userInput + '</h1>');
+});
