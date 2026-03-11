@@ -35,5 +35,8 @@ jobs:
           blackducksca_fixpr_enabled: true
           blackducksca_fixpr_filter_severities: '["CRITICAL","HIGH"]'
 
+          # ── GitHub token (required for SARIF upload, Fix PR, PR comments) ──
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
