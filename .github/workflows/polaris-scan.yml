@@ -1,72 +1,107 @@
+# ============================================================================
+# Approach A: GitHub Actions — Bridge CLI Direct
+# ============================================================================
+# What this does:
+#   - On every push to master/main: runs a full Polaris security scan (SAST + SCA)
+#   - On every pull request to master/main: runs a scan and posts findings as PR review comments
+#   - Can also be triggered manually from GitHub UI (Actions tab → Run workflow)
+#
+# Prerequisites:
+#   1. Go to your repo → Settings → Secrets and variables → Actions
+#   2. Add variable:  POLARIS_URL = https://your-polaris-server.blackduck.com
+#   3. Add secret:    POLARIS_ACCESS_TOKEN = your Polaris API token
+#   (GITHUB_TOKEN is auto-provided by GitHub — no setup needed)
+#
+# What is Bridge CLI?
+#   Bridge CLI is the command-line tool that connects your CI pipeline to Polaris.
+#   It uploads your code, triggers the scan on the Polaris server, and retrieves results.
+# ============================================================================
+
 name: Polaris Security Scan
 
+# When to run this workflow
 on:
   push:
-    branches: [master, main]
+    branches: [master, main]     # run on every push to master or main
   pull_request:
-    branches: [master, main]
-  workflow_dispatch:
+    branches: [master, main]     # run on every PR targeting master or main
+  workflow_dispatch:              # enables manual "Run workflow" button in GitHub UI
 
+# GitHub token permissions — controls what GITHUB_TOKEN can do
 permissions:
-  contents: read
-  pull-requests: write
+  contents: read                  # read repo code (required for checkout)
+  pull-requests: write            # post PR review comments (required for PR comment feature)
 
 jobs:
   polaris-scan:
-    runs-on: self-hosted
-
-    env:
-      POLARIS_URL: ${{ vars.POLARIS_URL }}
-      APP_NAME: ${{ github.repository_owner }}
-      PROJECT_NAME: ${{ github.event.repository.name }}
-      # PR 時用 head_ref，push 時用 ref_name
-      BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
-      PARENT_BRANCH: ${{ github.base_ref || 'master' }}
-      REPO_NAME: ${{ github.event.repository.name }}
-      REPO_OWNER: ${{ github.repository_owner }}
-      PR_NUMBER: ${{ github.event.pull_request.number }}
-      IS_PR: ${{ github.event_name == 'pull_request' }}
+    runs-on: self-hosted          # use self-hosted runner; change to 'ubuntu-latest' for GitHub-hosted
 
     steps:
+      # Step 1: Check out the repository code
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # Step 2: Download Bridge CLI (the tool that talks to Polaris)
       - name: Download Bridge CLI
         run: |
           curl -fLsS -o bridge.zip "https://repo.blackduck.com/bds-integrations-release/com/blackduck/integration/bridge/binaries/bridge-cli-bundle/latest/bridge-cli-bundle-linux64.zip"
           unzip -qo bridge.zip
           chmod +x bridge-cli-bundle-linux64/bridge-cli
 
-      - name: Run Polaris Scan (Push)
+      # Step 3a: Full scan on push (not a PR)
+      # This step only runs on push events, not pull requests
+      - name: Polaris Scan (Push)
         if: github.event_name != 'pull_request'
         env:
-          BRIDGE_POLARIS_ACCESSTOKEN: ${{ secrets.POLARIS_ACCESS_TOKEN }}
+          BRIDGE_POLARIS_ACCESSTOKEN: ${{ secrets.POLARIS_ACCESS_TOKEN }}   # Polaris API token from repo secrets
         run: |
           ./bridge-cli-bundle-linux64/bridge-cli --stage polaris \
-            polaris.serverurl="$POLARIS_URL" \
-            polaris.application.name="$APP_NAME" \
-            polaris.project.name="$PROJECT_NAME" \
-            polaris.branch.name="$BRANCH_NAME" \
+            polaris.serverurl="${{ vars.POLARIS_URL }}" \
+            polaris.application.name="${{ github.repository_owner }}" \
+            polaris.project.name="${{ github.event.repository.name }}" \
+            polaris.branch.name="${{ github.ref_name }}" \
             polaris.assessment.types="SAST,SCA" \
             polaris.onboarding=true
+          #
+          # ── Parameter reference ──
+          # polaris.serverurl          → Polaris server URL (from repo variables)
+          # polaris.application.name   → GitHub org name → maps to Polaris Application
+          # polaris.project.name       → repo name → maps to Polaris Project
+          # polaris.branch.name        → branch being pushed (e.g. "main")
+          # polaris.assessment.types   → SAST, SCA, or SAST,SCA (both)
+          # polaris.onboarding         → auto-creates Application/Project in Polaris if not exists
+          #
+          # ── Optional parameters (uncomment to use) ──
+          # polaris.test.sast.type=SAST-FULL \       # SAST-FULL (default, thorough) or SAST-RAPID (fast, pattern-based)
+          # polaris.test.sca.type=SCA-PACKAGE \       # SCA-PACKAGE (default), SCA-SIGNATURE, or SCA-PACKAGE,SCA-SIGNATURE
 
-      - name: Run Polaris Scan with PR Comments
+      # Step 3b: PR scan with automatic review comments
+      # Compares the PR branch against the target branch and posts new findings as PR comments
+      - name: Polaris Scan (Pull Request)
         if: github.event_name == 'pull_request'
         env:
           BRIDGE_POLARIS_ACCESSTOKEN: ${{ secrets.POLARIS_ACCESS_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}                        # built-in token, auto-provided by GitHub
         run: |
           ./bridge-cli-bundle-linux64/bridge-cli --stage polaris \
-            polaris.serverurl="$POLARIS_URL" \
-            polaris.application.name="$APP_NAME" \
-            polaris.project.name="$PROJECT_NAME" \
-            polaris.branch.name="$BRANCH_NAME" \
-            polaris.branch.parent.name="$PARENT_BRANCH" \
+            polaris.serverurl="${{ vars.POLARIS_URL }}" \
+            polaris.application.name="${{ github.repository_owner }}" \
+            polaris.project.name="${{ github.event.repository.name }}" \
+            polaris.branch.name="${{ github.head_ref }}" \
+            polaris.branch.parent.name="${{ github.base_ref }}" \
             polaris.assessment.types="SAST,SCA" \
             polaris.onboarding=true \
             polaris.prcomment.enabled=true \
-            polaris.prcomment.severities='["CRITICAL","HIGH","MEDIUM"]' \
-            github.repository.name="$REPO_NAME" \
-            github.repository.owner.name="$REPO_OWNER" \
-            github.repository.pull.number="$PR_NUMBER" \
+            github.repository.name="${{ github.event.repository.name }}" \
+            github.repository.owner.name="${{ github.repository_owner }}" \
+            github.repository.pull.number="${{ github.event.pull_request.number }}" \
             github.user.token="$GITHUB_TOKEN"
+          #
+          # ── PR-specific parameters ──
+          # polaris.branch.parent.name → PR target branch (e.g. "main") — used to find NEW issues only
+          # polaris.prcomment.enabled  → post findings as PR review comments
+          # github.*                   → GitHub API info for posting comments
+          #
+          # ── Optional ──
+          # polaris.prcomment.severities='["CRITICAL","HIGH","MEDIUM"]' \  # filter: only comment on these severities (default: high + critical)
+          # polaris.test.sast.type=SAST-RAPID \                            # recommended for PRs: faster feedback
