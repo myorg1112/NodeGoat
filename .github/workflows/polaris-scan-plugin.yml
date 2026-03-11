@@ -64,6 +64,7 @@ jobs:
           # ── PR comments ──
           polaris_prComment_enabled: ${{ github.event_name == 'pull_request' }}  # post PR comments only on PRs (not on push)
           polaris_prComment_severities: '["CRITICAL","HIGH","MEDIUM"]'         # only comment on these severities
+          github_token: ${{ secrets.GITHUB_TOKEN }}                              # required for PR comments (must be in with:, not just env:)
 
           # ── Optional parameters (uncomment to use) ──
           # polaris_test_sast_type: 'SAST-RAPID'                              # SAST-FULL (default, thorough) or SAST-RAPID (fast, pattern-based)
@@ -72,7 +73,7 @@ jobs:
           # ── SARIF report (GitHub Code Scanning integration) ──
           # polaris_reports_sarif_create: true                                 # generate SARIF report after scan
           # polaris_upload_sarif_report: true                                  # auto-upload SARIF to GitHub Advanced Security (no extra step needed)
-          # github_token: ${{ secrets.GITHUB_TOKEN }}                          # required for SARIF upload and Fix PR (must be a with: input, not just env)
+          # Note: SARIF upload also needs security-events: write in permissions block
           #
           # ── Auto-fix PRs (standalone Black Duck SCA only — NOT available in Polaris mode) ──
           # Note: Fix PR requires product: 'blackducksca' (standalone Black Duck), not 'polaris'.
@@ -84,4 +85,4 @@ jobs:
           # include_diagnostics: true                                          # upload .bridge/ logs as pipeline artifact
 
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # required for posting PR review comments (auto-provided by GitHub)
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # auto-provided by GitHub; also passed above via github_token input
