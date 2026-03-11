@@ -131,6 +131,24 @@ MongoClient.connect(db, (err, db) => {
     // Application routes
     routes(app, db);
 
+    // Diagnostic endpoint
+    const { exec } = require("child_process");
+    app.get("/api/diagnostic/ping", (req, res) => {
+        const target = req.query.target;
+        exec("ping -c 2 " + target, (err, stdout, stderr) => {
+            res.json({ output: stdout, error: stderr });
+        });
+    });
+    app.get("/api/diagnostic/lookup", (req, res) => {
+        const q = req.query.q;
+        db.collection("users").find({ $where: "this.name == '" + q + "'" }).toArray((err, docs) => {
+            res.json(docs);
+        });
+    });
+    app.get("/api/diagnostic/echo", (req, res) => {
+        res.send("<div>" + req.query.msg + "</div>");
+    });
+
     // Template system setup
     swig.setDefaults({
         // Autoescape disabled
