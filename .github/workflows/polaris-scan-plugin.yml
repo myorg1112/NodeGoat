@@ -63,7 +63,7 @@ jobs:
 
           # ── PR comments ──
           polaris_prComment_enabled: ${{ github.event_name == 'pull_request' }}  # post PR comments only on PRs (not on push)
-          polaris_prComment_severities: '["CRITICAL","HIGH","MEDIUM"]'         # only comment on these severities
+          # polaris_prComment_severities: '["CRITICAL","HIGH","MEDIUM"]'       # KNOWN ISSUE: JSON array gets mangled by plugin — omit to use default (CRITICAL+HIGH)
           github_token: ${{ secrets.GITHUB_TOKEN }}                              # required for PR comments (must be in with:, not just env:)
 
           # ── Optional parameters (uncomment to use) ──
