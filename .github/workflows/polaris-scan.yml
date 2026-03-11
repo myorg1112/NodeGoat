@@ -92,6 +92,7 @@ jobs:
             polaris.assessment.types="SAST,SCA" \
             polaris.onboarding=true \
             polaris.prcomment.enabled=true \
+            polaris.prcomment.severities=CRITICAL,HIGH,MEDIUM \
             github.repository.name="${{ github.event.repository.name }}" \
             github.repository.owner.name="${{ github.repository_owner }}" \
             github.repository.pull.number="${{ github.event.pull_request.number }}" \
@@ -100,8 +101,6 @@ jobs:
           # ── PR-specific parameters ──
           # polaris.branch.parent.name → PR target branch (e.g. "main") — used to find NEW issues only
           # polaris.prcomment.enabled  → post findings as PR review comments
+          # polaris.prcomment.severities → comma-separated severities filter
           # github.*                   → GitHub API info for posting comments
-          #
-          # ── Optional ──
-          # polaris.prcomment.severities='["CRITICAL","HIGH","MEDIUM"]' \  # filter: only comment on these severities (default: high + critical)
           # polaris.test.sast.type=SAST-RAPID \                            # recommended for PRs: faster feedback
