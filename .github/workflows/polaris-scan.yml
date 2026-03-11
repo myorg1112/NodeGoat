@@ -31,6 +31,7 @@ on:
 permissions:
   contents: read                  # read repo code (required for checkout)
   pull-requests: write            # post PR review comments (required for PR comment feature)
+  security-events: write          # SARIF upload to Code Scanning
 
 jobs:
   polaris-scan:
@@ -92,16 +93,16 @@ jobs:
             polaris.assessment.types="SAST,SCA" \
             polaris.onboarding=true \
             polaris.prcomment.enabled=true \
+            polaris.prcomment.severities=CRITICAL,HIGH,MEDIUM \
+            polaris.reports.sarif.create=true \
+            project.source.excludes='[".git","node_modules"]' \
             github.repository.name="${{ github.event.repository.name }}" \
             github.repository.owner.name="${{ github.repository_owner }}" \
             github.repository.pull.number="${{ github.event.pull_request.number }}" \
             github.user.token="$GITHUB_TOKEN"
-          #
-          # ── PR-specific parameters ──
-          # polaris.branch.parent.name → PR target branch (e.g. "main") — used to find NEW issues only
-          # polaris.prcomment.enabled  → post findings as PR review comments
-          # github.*                   → GitHub API info for posting comments
-          #
-          # ── Optional ──
-          # polaris.prcomment.severities='["CRITICAL","HIGH","MEDIUM"]' \  # filter: only comment on these severities (default: high + critical)
-          # polaris.test.sast.type=SAST-RAPID \                            # recommended for PRs: faster feedback
+
+      - name: Upload SARIF to GitHub Code Scanning
+        if: always()
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: .bridge/polaris_sarif_generator/report.sarif.json
