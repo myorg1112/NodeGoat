@@ -21,11 +21,7 @@ name: Polaris Security Scan
 
 # When to run this workflow
 on:
-  push:
-    branches: [master, main]     # run on every push to master or main
-  pull_request:
-    branches: [master, main]     # run on every PR targeting master or main
-  workflow_dispatch:              # enables manual "Run workflow" button in GitHub UI
+  workflow_dispatch:              # manual trigger only (disabled push/PR to avoid duplicate scans during testing)
 
 # GitHub token permissions — controls what GITHUB_TOKEN can do
 permissions:
