@@ -60,7 +60,8 @@ jobs:
 
           # ── PR comments ──
           polaris_prComment_enabled: ${{ github.event_name == 'pull_request' }}  # post PR comments only on PRs
-          polaris_prComment_severities: '["CRITICAL","HIGH","MEDIUM"]'         # severity filter for PR comments
+          polaris_prComment_severities: 'CRITICAL,HIGH,MEDIUM'                  # severity filter for PR comments
+          github_token: ${{ secrets.GITHUB_TOKEN }}                              # required for PR comments (must be in with:, not just env:)
 
           # ── Optional parameters (uncomment to use) ──
           # polaris_test_sast_type: 'SAST-RAPID'                              # SAST-FULL (default) or SAST-RAPID (fast)
@@ -68,4 +69,4 @@ jobs:
           # polaris_reports_sarif_create: true                                 # generate SARIF report for GitHub Code Scanning
 
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # required for posting PR review comments (auto-provided by GitHub)
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # Bridge CLI also reads this from env
