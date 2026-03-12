@@ -20,7 +20,11 @@ name: Polaris Scan (Plugin)
 
 # When to run this workflow
 on:
-  workflow_dispatch:              # manual trigger only (disabled push/PR to avoid duplicate scans during testing)
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+  workflow_dispatch:
 
 # GitHub token permissions
 permissions:
