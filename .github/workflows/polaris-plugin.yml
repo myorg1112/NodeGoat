@@ -1,24 +1,22 @@
 # ============================================================================
-# Approach B: GitHub Actions — Marketplace Plugin (Black Duck Security Scan)
+# Polaris Security Scan — 3-Phase Policy Test
 # ============================================================================
-# This is the simpler alternative to Approach A (polaris-scan.yml).
-# The plugin wraps Bridge CLI and handles:
-#   - Bridge CLI download (no manual curl/unzip)
-#   - Push vs PR detection (no if/else logic needed)
-#   - PR comment posting
-#   - Exit code handling
+# This workflow is FIXED across all phases. Only the Polaris Policy changes:
+#   Phase 1: Policy has fix-by dates, no rules     → scan passes (exit 0)
+#   Phase 2: Policy adds rule → Jira ticket         → scan passes (exit 0)
+#   Phase 3: Policy adds rule → Attempt Build Break → scan fails  (exit 8)
 #
-# Same scan result as Approach A, just less YAML to maintain.
+# Behavior:
+#   - Push to master: Full SAST + SCA, policy check (break if policy says so)
+#   - PR to master:   Rapid SAST + SCA, PR comments (Critical/High/Medium)
 #
-# Prerequisites (same as Approach A):
-#   1. Go to your repo → Settings → Secrets and variables → Actions
-#   2. Add variable:  POLARIS_URL = https://your-polaris-server.blackduck.com
-#   3. Add secret:    POLARIS_ACCESS_TOKEN = your Polaris API token
+# Prerequisites:
+#   1. Repo variable:  POLARIS_URL = https://your-polaris-server.blackduck.com
+#   2. Repo secret:    POLARIS_ACCESS_TOKEN = your Polaris API token
 # ============================================================================
 
 name: Polaris Scan (Plugin)
 
-# When to run this workflow
 on:
   push:
     branches: [master, main]
@@ -26,47 +24,43 @@ on:
     branches: [master, main]
   workflow_dispatch:
 
-# GitHub token permissions
 permissions:
   contents: read
-  pull-requests: write            # required for PR comment feature
+  pull-requests: write
 
 jobs:
   polaris-scan:
-    runs-on: self-hosted          # use self-hosted runner; change to 'ubuntu-latest' for GitHub-hosted
+    runs-on: self-hosted
 
     steps:
-      # Step 1: Check out the repository code
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Step 2: Run Polaris scan via the official GitHub Action plugin
-      # The plugin auto-detects push vs PR and adjusts behavior accordingly
       - name: Black Duck Security Scan
         uses: blackduck-inc/black-duck-security-scan@v2
         with:
-          # ── Connection ──
-          polaris_server_url: ${{ vars.POLARIS_URL }}                          # Polaris server URL (from repo variables)
-          polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}            # Polaris API token (from repo secrets)
+          # Connection
+          polaris_server_url: ${{ vars.POLARIS_URL }}
+          polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}
 
-          # ── Project mapping ──
-          polaris_application_name: ${{ github.repository_owner }}             # GitHub org name → Polaris Application
-          polaris_project_name: ${{ github.event.repository.name }}            # repo name → Polaris Project
-          polaris_branch_name: ${{ github.head_ref || github.ref_name }}       # PR: head branch; push: branch name
-          polaris_branch_parent_name: ${{ github.base_ref || 'master' }}       # PR: target branch; push: fallback to 'master'
+          # Project mapping
+          polaris_application_name: ${{ github.repository_owner }}
+          polaris_project_name: ${{ github.event.repository.name }}
+          polaris_branch_name: ${{ github.head_ref || github.ref_name }}
+          polaris_branch_parent_name: ${{ github.base_ref || 'master' }}
 
-          # ── Scan types ──
-          polaris_assessment_types: 'SAST,SCA'                                 # run both SAST and SCA scans
+          # Scan types — Rapid for PRs (fast feedback), Full for main (thorough)
+          polaris_assessment_types: 'SAST,SCA'
+          polaris_test_sast_type: ${{ github.event_name == 'pull_request' && 'SAST-RAPID' || 'SAST-FULL' }}
 
-          # ── PR comments ──
-          polaris_prComment_enabled: ${{ github.event_name == 'pull_request' }}  # post PR comments only on PRs
-          polaris_prComment_severities: 'CRITICAL,HIGH,MEDIUM'                  # severity filter for PR comments
-          github_token: ${{ secrets.GITHUB_TOKEN }}                              # required for PR comments (must be in with:, not just env:)
+          # PR comments — only active on PRs (plugin auto-detects)
+          polaris_prComment_enabled: ${{ github.event_name == 'pull_request' }}
+          polaris_prComment_severities: 'CRITICAL,HIGH,MEDIUM'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
-          # ── Optional parameters (uncomment to use) ──
-          # polaris_test_sast_type: 'SAST-RAPID'                              # SAST-FULL (default) or SAST-RAPID (fast)
-          # polaris_test_sca_type: 'SCA-PACKAGE'                              # SCA-PACKAGE (default), SCA-SIGNATURE, or both
-          # polaris_reports_sarif_create: true                                 # generate SARIF report for GitHub Code Scanning
+          # Build break — controlled by Polaris Policy, not this YAML
+          # mark_build_status defaults to 'failure' — if policy has "Attempt Build Break"
+          # rule and conditions match, the build will fail with exit code 8
 
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # Bridge CLI also reads this from env
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
