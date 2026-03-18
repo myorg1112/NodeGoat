@@ -27,6 +27,7 @@ on:
 permissions:
   contents: read
   pull-requests: write
+  security-events: write
 
 jobs:
   polaris-scan:
@@ -57,6 +58,10 @@ jobs:
           polaris_prComment_enabled: ${{ github.event_name == 'pull_request' }}
           polaris_prComment_severities: 'CRITICAL,HIGH,MEDIUM'
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
+          # SARIF for GitHub Code Scanning (Q11 test)
+          polaris_reports_sarif_create: true
+          polaris_upload_sarif_report: true
 
           # Build break — controlled by Polaris Policy, not this YAML
           # mark_build_status defaults to 'failure' — if policy has "Attempt Build Break"
