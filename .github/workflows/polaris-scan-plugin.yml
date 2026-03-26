@@ -1,0 +1,88 @@
+# ============================================================================
+# Approach B: GitHub Actions — Marketplace Plugin (Black Duck Security Scan)
+# ============================================================================
+# Place this file at: .github/workflows/polaris-scan.yml
+#
+# This is the simpler alternative to Approach A.
+# The plugin (blackduck-inc/black-duck-security-scan@v2) wraps Bridge CLI and handles:
+#   - Bridge CLI download (no manual curl/unzip)
+#   - Push vs PR detection (no if/else logic needed)
+#   - PR comment posting
+#   - Exit code handling
+#
+# Same scan result as Approach A, just less YAML to maintain.
+#
+# Prerequisites (same as Approach A):
+#   1. Go to your repo → Settings → Secrets and variables → Actions
+#   2. Add variable:  POLARIS_URL = https://your-polaris-server.blackduck.com
+#   3. Add secret:    POLARIS_ACCESS_TOKEN = your Polaris API token
+# ============================================================================
+
+name: Polaris Scan (Plugin)
+
+# When to run this workflow
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+  workflow_dispatch:           # enables manual trigger from GitHub UI
+
+# GitHub token permissions — controls what GITHUB_TOKEN can do
+permissions:
+  contents: read               # read repo code (required for checkout)
+  pull-requests: write         # post PR review comments (required for PR comment feature)
+  # security-events: write    # required only if using SARIF upload to GitHub Code Scanning
+
+jobs:
+  polaris-scan:
+    runs-on: self-hosted       # use self-hosted runner for POC test
+
+    steps:
+      # Step 1: Check out the repository code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Run Polaris scan via the official GitHub Action plugin
+      # The plugin auto-detects push vs PR and adjusts behavior accordingly
+      - name: Black Duck Security Scan
+        uses: blackduck-inc/black-duck-security-scan@v2
+        with:
+          # ── Connection ──
+          polaris_server_url: ${{ vars.POLARIS_URL }}                          # Polaris server URL (from repo variables)
+          polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}            # Polaris API token (from repo secrets)
+
+          # ── Project mapping ──
+          polaris_application_name: ${{ github.repository_owner }}             # GitHub org name → Polaris Application
+          polaris_project_name: ${{ github.event.repository.name }}            # repo name → Polaris Project
+          polaris_branch_name: ${{ github.head_ref || github.ref_name }}       # PR: head branch; push: branch name
+          polaris_branch_parent_name: ${{ github.base_ref || 'main' }}         # PR: target branch; push: fallback to 'main'
+
+          # ── Scan types ──
+          polaris_assessment_types: 'SAST,SCA'                                 # run both SAST and SCA scans
+
+          # ── PR comments ──
+          polaris_prComment_enabled: ${{ github.event_name == 'pull_request' }}  # post PR comments only on PRs (not on push)
+          polaris_prComment_severities: 'CRITICAL,HIGH,MEDIUM'                   # comma-separated (not JSON array)
+          github_token: ${{ secrets.GITHUB_TOKEN }}                              # required for PR comments (must be in with:, not just env:)
+
+          # ── Optional parameters (uncomment to use) ──
+          # polaris_test_sast_type: 'SAST-RAPID'                              # SAST-FULL (default, thorough) or SAST-RAPID (fast, pattern-based)
+          # polaris_test_sca_type: 'SCA-PACKAGE'                              # SCA-PACKAGE (default), SCA-SIGNATURE, or SCA-PACKAGE,SCA-SIGNATURE
+          #
+          # ── SARIF report (GitHub Code Scanning integration) ──
+          # polaris_reports_sarif_create: true                                 # generate SARIF report after scan
+          # polaris_upload_sarif_report: true                                  # auto-upload SARIF to GitHub Advanced Security (no extra step needed)
+          # Note: SARIF upload also needs security-events: write in permissions block
+          #
+          # ── Auto-fix PRs (standalone Black Duck SCA only — NOT available in Polaris mode) ──
+          # Note: Fix PR requires product: 'blackducksca' (standalone Black Duck), not 'polaris'.
+          # If using standalone BD SCA, uncomment these with blackducksca_url/blackducksca_token:
+          # blackducksca_fixpr_enabled: true
+          # blackducksca_fixpr_filter_severities: '["CRITICAL","HIGH"]'
+          #
+          # ── Diagnostics (troubleshooting scan failures) ──
+          # include_diagnostics: true                                          # upload .bridge/ logs as pipeline artifact
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # auto-provided by GitHub; also passed above via github_token input
